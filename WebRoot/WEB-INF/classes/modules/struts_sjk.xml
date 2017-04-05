@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_sjk" extends="/ycszh" namespace="/sjk">
+		<action name="sjk_*" class="com.ycszh.ssh.action.sjk.SjkInfoAction" method="{1}">
+			<result name="sjkDx">/pages/sjk/dxList.jsp</result>
+		</action>
+	</package>
+</struts>

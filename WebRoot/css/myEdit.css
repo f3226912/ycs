@@ -1,0 +1,84 @@
+* {
+	margin: 0 auto;
+}
+
+.xzyh {
+	width: 90%;
+	padding-bottom: 25px;
+	border: 1px solid #aaccee;
+}
+
+.h1_t {
+	width: 100%;
+	height: 23px;
+	line-height: 23px;
+	background: url(../images/table_abg.gif) repeat-x;
+	font-size: 14px;
+	border-bottom: 1px solid #aaccee;
+}
+
+.table_xx {
+	width: 90%;
+	margin-top: 25px;
+	background: #f6f6f6;
+}
+
+table,table td,table th {
+	border: 1px solid #aaccee;
+	border-collapse: collapse;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+td {
+	height: 26px;
+	font-size: 12px;
+}
+
+.table_t {
+	background: url(../images/table_abg.gif) repeat-x;
+	font-size: 14px;
+	height: 23px;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.td_r {
+	text-align: right;
+}
+
+.td_l {
+	text-align: left;
+}
+
+.text_w {
+	width: 400px;
+}
+
+.xzq {
+	width: 400px;
+}
+
+.wby {
+	width: 400px;
+	height: 100px;
+}
+
+.bnt_a {
+	width: 90px;
+	height: 23px;
+	border: none;
+	background: url(../images/bnt_1.jpg) no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.djan {
+	text-align: center;
+}
+
+.xzyh span {
+	/*color: #FF0000;*/
+}

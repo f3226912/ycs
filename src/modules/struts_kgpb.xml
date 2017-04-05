@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_kgpb" extends="/ycszh" namespace="/kgpb">
+		<action name="pbxxb_*" class="com.ycszh.ssh.action.kgpb.KgpbPbxxbAction" method="{1}">
+			<result name="pbList">/pages/kgpb/pbList.jsp</result>
+		</action>
+		
+		<action name="kcxxb_*" class="com.ycszh.ssh.action.kgpb.KgpbKcxxbAction" method="{1}">
+			<result name="list">/pages/kgpb/kcList.jsp</result>
+			<result name="update">/pages/kgpb/addKc.jsp</result>
+		</action>
+		
+		<action name="kgxxb_*" class="com.ycszh.ssh.action.kgpb.KgpbKgxxbAction" method="{1}">
+			<result name="list">/pages/kgpb/kgList.jsp</result>
+			<result name="update">/pages/kgpb/addKg.jsp</result>
+		</action>
+		
+		<action name="tsrqb_*" class="com.ycszh.ssh.action.kgpb.KgpbTsrqbAction" method="{1}">
+			<result name="list">/pages/kgpb/tsrqList.jsp</result>
+			<result name="update">/pages/kgpb/addTsrq.jsp</result>
+		</action>
+	</package>
+</struts>

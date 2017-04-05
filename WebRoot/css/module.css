@@ -1,0 +1,65 @@
+/*****全局样式*****/
+{
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.edittable{
+	font-size:12px;
+	width:500px;
+	border-collapse:collapse;
+}
+.edittable,.edittable tr,.edittable td,.edittable th{
+	BORDER-RIGHT: #3889a0 1px solid;
+	BORDER-TOP: #3889a0 1px solid;
+	BORDER-LEFT: #3889a0 1px solid;
+	BORDER-BOTTOM: #3889a0 1px solid;
+}
+.edittable tr{
+	height:30px;
+	background-color:#EEF2FB;
+}
+.edittable th{
+	WIDTH: 150px;
+	TEXT-ALIGN: right
+}
+#admin_title {
+	MARGIN-TOP: 1px; MARGIN-LEFT: 1px; WIDTH: 99.8%; MARGIN-RIGHT: 1px; HEIGHT: 25px; BACKGROUND-COLOR: #353c44
+}
+#admin_title .logo {
+	MARGIN-TOP: 4px; FLOAT: left; MARGIN-LEFT: 10px; WIDTH: 14px; HEIGHT: 14px
+}
+#admin_title .title {
+	FONT-SIZE: 12px; FLOAT: left; MARGIN-LEFT: 10px; COLOR: white; LINE-HEIGHT: 26px; HEIGHT: 26px
+}
+#admin_main {
+	MARGIN-TOP: 30px; WIDTH: 500px
+}
+#button_submit_pwd A {
+	DISPLAY: block; BACKGROUND: url(../images/button_01.gif) -8px 0px; MARGIN-LEFT: 210px; WIDTH: 80px; HEIGHT: 31px
+}
+#button_submit_pwd A:hover {
+	BACKGROUND: url(../images/button_01.gif) -98px 0px
+}
+#button_update_password A {
+	DISPLAY: block; BACKGROUND: url(../images/button_02.gif) -8px 0px; MARGIN-LEFT: 210px; WIDTH: 80px; HEIGHT: 31px
+}
+#button_update_password A:hover {
+	BACKGROUND: url(../images/button_02.gif) -98px 0px
+}
+#button_tool {
+	MARGIN-LEFT: 180px
+}
+#button_submit_info A {
+	DISPLAY: block; BACKGROUND: url(../images/button_01.gif) -8px 0px; FLOAT: left; WIDTH: 80px; HEIGHT: 31px
+}
+#button_submit_info A:hover {
+	BACKGROUND: url(../images/button_01.gif) -98px 0px
+}
+#button_back_info A {
+	DISPLAY: block; BACKGROUND: url(../images/button_06.gif) -8px 0px; FLOAT: right; WIDTH: 80px; HEIGHT: 31px
+}
+#button_back_info A:hover {
+	BACKGROUND: url(../images/button_06.gif) -98px 0px
+}
+#admin_main_form {
+	MARGIN-TOP: 30px; WIDTH: 500px
+}

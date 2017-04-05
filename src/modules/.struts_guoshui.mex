@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="/guoshui" location="0,0" size="0,0">
+    <action name="guoshui_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="guoshuilist.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="yujinglist.jsp" path="/pages/yujing/yujinglist.jsp" location="21,30" size="150,55" />
+  <webResource name="splist.jsp" path="/pages/drv/splist.jsp" location="602,135" size="150,55" />
+  <webResource name="spedit.jsp" path="/pages/drv/spedit.jsp" location="322,310" size="150,55" />
+  <webResource name="guoshuilist.jsp" path="/pages/guoshui/guoshuilist.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

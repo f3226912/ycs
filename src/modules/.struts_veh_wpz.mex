@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_wpz" location="23,165" size="280,210">
+    <action name="wpz_*" location="65,71" size="150,83">
+      <result name="initJdc_wpz">
+        <resourceEdge source="initJdc_wpz" routing="0" target="wpz_jdcsledit.jsp" />
+      </result>
+      <result name="spcxlist">
+        <resourceEdge source="spcxlist" routing="0" target="spcxlist.jsp" />
+      </result>
+      <result name="slxq">
+        <resourceEdge source="slxq" routing="0" target="wpz_jdcslshow.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="wpz_ajax" location="10,609" size="180,92">
+    <action name="wpzajax_*" location="15,23" size="150,62">
+      <result name="jsonBean" />
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="wpz_jdcsledit.jsp" path="/pages/veh_wpz/wpz_jdcsledit.jsp" location="51,430" size="150,55" />
+  <webResource name="spcxlist.jsp" path="/pages/veh_wpz/spcxlist.jsp" location="66,10" size="150,55" />
+  <webResource name="wpz_jdcslshow.jsp" path="/pages/veh_wpz/wpz_jdcslshow.jsp" location="366,220" size="150,55" />
+</Struts2Diagram>
+

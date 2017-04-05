@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="/yujing" extends="/ycszh" namespace="/yujing">
+		<action name="yujing_*" class="com.ycszh.ssh.action.drv.YujingAction" method="{1}">
+			<result name="list">/pages/yujing/yujinglist.jsp</result>
+			<result name="vehList">/pages/yujing/vehYujinglist.jsp</result>
+		</action>
+		<action name="slgSpxx_*" class="com.ycszh.ssh.action.drv.SlgSpxxAction" method="{1}">
+			<result name="list">/pages/drv/splist.jsp</result>
+			<result name="edit">/pages/drv/spedit.jsp</result>
+		</action>
+	</package>
+	
+	<package name="/delSlgSpxx" extends="json-default" namespace="/slgSpxx">
+		<action name="slgSpxx_*" class="com.ycszh.ssh.action.drv.SlgSpxxAction" method="{1}">
+			<result type="json" name="success">
+				<param name="root">result</param>
+			</result>
+			<result type="json" name="isSp">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>

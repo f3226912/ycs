@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="/ycszh" location="0,0" size="0,0" />
+  <include file="struts_drv.xml" location="0,0" size="0,0" />
+  <include file="struts_yanche.xml" location="0,0" size="0,0" />
+  <include file="struts_yujing.xml" location="0,0" size="0,0" />
+  <include file="struts_guoshui.xml" location="0,0" size="0,0" />
+  <include file="struts_bfc.xml" location="0,0" size="0,0" />
+  <include file="struts_veh.xml" location="0,0" size="0,0" />
+  <include file="struts_ydwt.xml" location="0,0" size="0,0" />
+  <include file="struts_dydj.xml" location="0,0" size="0,0" />
+  <include file="struts_blacklist.xml" location="0,0" size="0,0" />
+  <include file="struts_jdcbg.xml" location="0,0" size="0,0" />
+  <include file="struts_cljstj.xml" location="0,0" size="0,0" />
+  <include file="struts_sjk.xml" location="0,0" size="0,0" />
+  <include file="struts_queryRelate.xml" location="0,0" size="0,0" />
+  <include file="struts_mjcl.xml" location="0,0" size="0,0" />
+  <include file="struts_ddc.xml" location="0,0" size="0,0" />
+  <include file="struts_xyc.xml" location="0,0" size="0,0" />
+  <include file="struts_gjgggl.xml" location="0,0" size="0,0" />
+  <include file="struts_pdaycimeigl.xml" location="0,0" size="0,0" />
+  <include file="struts_kgpb.xml" location="0,0" size="0,0" />
+  <include file="struts_jsrdzda.xml" location="0,0" size="0,0" />
+  <include file="struts_sfrz.xml" location="0,0" size="0,0" />
+  <include file="struts_ezxfw.xml" location="0,0" size="0,0" />
+</Struts2Diagram>
+

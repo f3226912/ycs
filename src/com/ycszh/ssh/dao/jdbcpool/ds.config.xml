@@ -1,0 +1,20 @@
+<ds-config>
+	<pool>
+		<type>oracle</type>
+		<name>dpublish</name>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<url>jdbc:oracle:thin:@100.100.21.101:1521:edb</url>
+		<username>dpublish</username>
+		<password>pub9513</password>
+		<maxconn>5</maxconn>
+	</pool>
+	<pool>
+		<type>oracle</type>
+		<name>img_vfile</name>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<url>jdbc:oracle:thin:@100.100.21.33:1521:tpdb1</url>
+		<username>IMG_VFILE</username>
+		<password>PICSAVE</password>
+		<maxconn>5</maxconn>
+	</pool>
+</ds-config>

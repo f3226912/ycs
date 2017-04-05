@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_cljstj" extends="/ycszh" namespace="/cljstj">
+		<action name="cljstj_*" class="com.ycszh.ssh.action.cljstj.CljstjAction" method="{1}">
+			<result name="list">/pages/cljstj/cljsList.jsp</result>
+			<result name="shlist">/pages/cljstj/cljstjShList.jsp</result>
+			<result name="shym">/pages/cljstj/cljstjSh.jsp</result>
+			<result name="cxym">/pages/cljstj/cljstjCk.jsp</result>
+		</action>
+	</package>
+</struts>

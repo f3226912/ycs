@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- 将SessionFactory注入DAO -->
+	<bean name="defaultDao" class="com.ycszh.ssh.dao.DefaultDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean name="defaultDpublishDao" class="com.ycszh.ssh.dao.DefaultDpublishDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_dpublish"></property>
+	</bean>
+    
+	<!-- 一窗式驾驶证采集 -->
+	<bean name="slgDrvXxcjbDao" class="com.ycszh.ssh.dao.drv.impl.SlgDrvXxcjbDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="slgDrvFileupload" class="com.ycszh.ssh.dao.drv.impl.SlgDrvFileUploadDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_efs"></property>
+	</bean>
+	<bean name="slgDrvXxcjbLogDao" class="com.ycszh.ssh.dao.drv.impl.SlgDrvXxcjbLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="slgSjzdDao" class="com.ycszh.ssh.dao.drv.impl.SlgSjzdDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="slgYwlxDao" class="com.ycszh.ssh.dao.drv.impl.SlgYwlxDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="slgZjxxbDao" class="com.ycszh.ssh.dao.drv.impl.SlgZjxxbDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="slgSpDao" class="com.ycszh.ssh.dao.drv.impl.SlgSpxxDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="cldzdacxDao" class="com.ycszh.ssh.dao.drv.impl.CldzdacxDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- 一窗式机动车验车 -->
+	<bean name="pdasmycChbaseDao" class="com.ycszh.ssh.dao.yanche.impl.PdasmycChbaseDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycChbaseLogDao" class="com.ycszh.ssh.dao.yanche.impl.PdasmycChbaseLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycChdlrDao" class="com.ycszh.ssh.dao.yanche.impl.PdasmycChdlrDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycVehPcbDao" class="com.ycszh.ssh.dao.yanche.impl.PdasmycVehPcbDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycVehPcbLogDao" class="com.ycszh.ssh.dao.yanche.impl.PdasmycVehPcbLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycPoliceSettingDao"
+		class="com.ycszh.ssh.dao.yanche.impl.PdasmycPoliceSettingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycPoliceSettingLogDao"
+		class="com.ycszh.ssh.dao.yanche.impl.PdasmycPoliceSettingLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycTempMidOutDao"
+		class="com.ycszh.ssh.dao.yanche.impl.PdasmycTempMidOutDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycTempMidOutNDao"
+		class="com.ycszh.ssh.dao.yanche.impl.PdasmycTempMidOutNDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="vVehUserYcsDao" class="com.ycszh.ssh.dao.yanche.impl.VVehUserYcsDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="vVehOrgYcsDao" class="com.ycszh.ssh.dao.yanche.impl.VVehOrgYcsDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="yujingDao" class="com.ycszh.ssh.dao.drv.impl.YujingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="vDataCheckDao" class="com.ycszh.ssh.dao.yanche.impl.VDataCheckDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="vDataCheckLogDao" class="com.ycszh.ssh.dao.yanche.impl.VDataCheckLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="bJdccyxxDao" class="com.ycszh.ssh.dao.yanche.impl.BJdccyxxDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycVehicleTsspDao"
+		class="com.ycszh.ssh.dao.yanche.impl.PdasmycVehicleTsspDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="ywlsglVehFlowDao" class="com.ycszh.ssh.dao.yanche.impl.YwlsglVehFlowDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="ywlsglVehFlowLogDao" class="com.ycszh.ssh.dao.yanche.impl.YwlsglVehFlowLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="ywlsglVehFlowModifyDao"
+		class="com.ycszh.ssh.dao.yanche.impl.YwlsglVehFlowModifyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="vehicleTempMidOutDao"
+		class="com.ycszh.ssh.dao.yanche.impl.VehicleTempMidOutDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="ywlsglVehFieldglDao" class="com.ycszh.ssh.dao.yanche.impl.YwlsglVehFieldglDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pdasmycSjzdDao" class="com.ycszh.ssh.dao.yanche.impl.PdasmycSjzdDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="vehicleTempMidInDao" class="com.ycszh.ssh.dao.yanche.impl.VehicleTempMidInDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 验车字典管理 -->
+	<bean name="yczdglDao" class="com.ycszh.ssh.dao.yanche.impl.YczdglDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_cgskcb" />
+	</bean>
+	<bean name="yhlxxzDao" class="com.ycszh.ssh.dao.yanche.impl.YhlxxzDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_cgskcb" />
+	</bean>
+	<bean name="txbycgpsDao" class="com.ycszh.ssh.dao.yanche.impl.TXbycGpsDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_cgskcb" />
+	</bean>
+	<bean name="txbycgpslogDao" class="com.ycszh.ssh.dao.yanche.impl.TXbycGpsLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_cgskcb" />
+	</bean>
+
+	<!-- 国税联网数据查询-->
+	<bean name="guoShuiLianwDao" class="com.ycszh.ssh.dao.guoshui.impl.GuoshuiLianwDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_gs"></property>
+	</bean>
+	<!-- 报废车信息管理-->
+	<bean name="bfcJbxxbDao" class="com.ycszh.ssh.dao.bfc.impl.BfcJbxxbDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="bfcJbxxbLogDao" class="com.ycszh.ssh.dao.bfc.impl.BfcJbxxbLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- 机动车受理 -->
+	<bean name="slgVehDao" class="com.ycszh.ssh.dao.veh.impl.SlgVehDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 机动车受理审批 -->
+	<bean name="vehSpDao" class="com.ycszh.ssh.dao.veh.impl.VehSpDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="vehPodbspDao" class="com.ycszh.ssh.dao.veh.impl.VehPodbspDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 手机库 -->
+	<bean name="sjkInfoDao" class="com.ycszh.ssh.dao.sjk.impl.SjkInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_sjk"></property>
+	</bean>
+	
+	<!-- Dpublish注入 -->
+	<bean name="dpublishDao" class="com.ycszh.ssh.dao.drv.impl.DpublishDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_dpublish"></property>
+	</bean>
+	
+	<!-- 考官排班 -->
+	<bean name="kgpbPbxxbDao" class="com.ycszh.ssh.dao.kgpb.impl.KgpbPbxxbDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean name="itopscDao" class="com.ycszh.ssh.dao.veh.impl.ItopscDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_itosc" />
+	</bean>
+	
+	<!-- 车管重点机动车驾驶人管理 -->
+	<bean name="slgZdjdcjsrglDao" class="com.ycszh.ssh.dao.dagl.impl.SlgZdjdcjsrglDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- 将DAO注入Service -->
+	<bean name="slgDrvService" class="com.ycszh.ssh.service.drv.impl.SlgDrvServiceImpl">
+		<property name="slgDrvXxcjbDao" ref="slgDrvXxcjbDao" />
+		<property name="slgDrvXxcjbLogDao" ref="slgDrvXxcjbLogDao" />
+		<property name="slgSjzdDao" ref="slgSjzdDao" />
+		<property name="slgYwlxDao" ref="slgYwlxDao" />
+		<property name="slgZjxxbDao" ref="slgZjxxbDao" />
+		<property name="yujingDao" ref="yujingDao"></property>
+		<property name="slgDrvFileUpload" ref="slgDrvFileupload"></property>
+		<property name="dpublishDao" ref="dpublishDao"></property>
+		<property name="itopscDao" ref="itopscDao"></property>
+	</bean>
+
+	<bean name="pdasmycChbaseService"
+		class="com.ycszh.ssh.service.yanche.impl.PdasmycChbaseServiceImpl">
+		<property name="pdasmycChbaseDao" ref="pdasmycChbaseDao" />
+		<property name="pdasmycChbaseLogDao" ref="pdasmycChbaseLogDao" />
+	</bean>
+	
+	<!-- 验车字典管理  -->
+	<bean name="yczdglService" class="com.ycszh.ssh.service.yanche.impl.YczdglServiceImpl">
+		<property name="yczdglDao" ref="yczdglDao" />
+		<property name="yhlxxzDao" ref="yhlxxzDao" />
+		<property name="txbycgpsDao" ref="txbycgpsDao"/>
+		<property name="txbycgpslogDao" ref="txbycgpslogDao"/>
+		<property name="defaultDao" ref="defaultDao"/>
+	</bean>	
+
+	<bean name="pdasmycChdlrService"
+		class="com.ycszh.ssh.service.yanche.impl.PdasmycChdlrServiceImpl">
+		<property name="pdasmycChdlrDao" ref="pdasmycChdlrDao" />
+	</bean>
+
+	<bean name="pdasmycVehPcbService"
+		class="com.ycszh.ssh.service.yanche.impl.PdasmycVehPcbServiceImpl">
+		<property name="pdasmycVehPcbDao" ref="pdasmycVehPcbDao" />
+		<property name="pdasmycVehPcbLogDao" ref="pdasmycVehPcbLogDao" />
+		<property name="pdasmycPoliceSettingDao" ref="pdasmycPoliceSettingDao" />
+		<property name="pdasmycPoliceSettingLogDao" ref="pdasmycPoliceSettingLogDao" />
+		<property name="pdasmycTempMidOutNDao" ref="pdasmycTempMidOutNDao" />
+		<property name="vVehUserYcsDao" ref="vVehUserYcsDao" />
+		<property name="vVehOrgYcsDao" ref="vVehOrgYcsDao" />
+		<property name="vDataCheckDao" ref="vDataCheckDao" />
+		<property name="vDataCheckLogDao" ref="vDataCheckLogDao" />
+		<property name="bJdccyxxDao" ref="bJdccyxxDao" />
+		<property name="pdasmycVehicleTsspDao" ref="pdasmycVehicleTsspDao" />
+		<property name="vehicleTempMidOutDao" ref="vehicleTempMidOutDao"></property>
+	</bean>
+
+	<bean name="yujingService" class="com.ycszh.ssh.service.drv.impl.YujingServiceImpl">
+		<property name="yujingDao" ref="yujingDao"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+	</bean>
+	<bean name="slgService" class="com.ycszh.ssh.service.drv.impl.SlgSpxxServiceImpl">
+		<property name="slgSpDao" ref="slgSpDao"></property>
+		<property name="slgDrvXxcjbDao" ref="slgDrvXxcjbDao"></property>
+	</bean>
+	<bean name="cldzdacxService" class="com.ycszh.ssh.service.drv.impl.CldzdacxServiceImpl">
+		<property name="cldzdacxDao" ref="cldzdacxDao"></property>
+	</bean>
+
+	<bean name="ywlsglVehFlowService"
+		class="com.ycszh.ssh.service.yanche.impl.YwlsglVehFlowServiceImpl">
+		<property name="ywlsglVehFlowDao" ref="ywlsglVehFlowDao" />
+		<property name="ywlsglVehFlowLogDao" ref="ywlsglVehFlowLogDao" />
+		<property name="ywlsglVehFlowModifyDao" ref="ywlsglVehFlowModifyDao" />
+		<property name="vehicleTempMidOutDao" ref="vehicleTempMidOutDao" />
+		<property name="pdasmycVehPcbDao" ref="pdasmycVehPcbDao" />
+		<property name="ywlsglVehFieldglDao" ref="ywlsglVehFieldglDao" />
+		<property name="pdasmycSjzdDao" ref="pdasmycSjzdDao" />
+		<property name="pdasmycTempMidOutNDao" ref="pdasmycTempMidOutNDao" />
+		<property name="vehicleTempMidInDao" ref="vehicleTempMidInDao" />
+	</bean>
+
+	<!-- 国税联网数据查询 -->
+	<bean name="guoShuiLianwService"
+		class="com.ycszh.ssh.service.guoshui.impl.GuoshuiLianwServiceImpl">
+		<property name="guoShuiLianwDao" ref="guoShuiLianwDao"></property>
+	</bean>
+
+	<!-- 报废车信息管理 -->
+	<bean name="bfcJbxxbService" class="com.ycszh.ssh.service.bfc.impl.BfcJbxxbServiceImpl">
+		<property name="bfcJbxxbDao" ref="bfcJbxxbDao"></property>
+		<property name="bfcJbxxbLogDao" ref="bfcJbxxbLogDao"></property>
+		<property name="slgSjzdDao" ref="slgSjzdDao"></property>
+	</bean>
+	<!-- 报废车特殊审批 -->
+	<bean name="bfcTsspbService" class="com.ycszh.ssh.service.bfc.impl.BfcTsspbServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<!-- 报废车监管锁控表 -->
+	<bean name="bfcJgskbService" class="com.ycszh.ssh.service.bfc.impl.BfcJgskbServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<!-- 机动车受理 -->
+	<bean name="slgVehService" class="com.ycszh.ssh.service.veh.impl.SlgVehServiceImpl">
+		<property name="slgVehDao" ref="slgVehDao"></property>
+		<property name="slgDrvFileUpload" ref="slgDrvFileupload"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+		<property name="dydjService" ref="dydjService"></property>
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="itopscDao" ref="itopscDao"></property>
+	</bean>
+	<!-- 机动车受理-无拍照 -->
+	<bean name="jdcslWpzService" class="com.ycszh.ssh.service.veh.impl.JdcslWpzServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="slgVehDao" ref="slgVehDao"></property>
+		<property name="slgDrvFileUpload" ref="slgDrvFileupload"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+		<property name="dydjService" ref="dydjService"></property>
+		<property name="itopscDao" ref="itopscDao"></property>
+		<property name="slgYwlxDao" ref="slgYwlxDao"></property>
+	</bean>
+	<!-- 机动车受理审批 -->
+	<bean name="vehSpService" class="com.ycszh.ssh.service.veh.impl.VehSpServiceImpl">
+		<property name="vehSpDao" ref="vehSpDao"></property>
+		<property name="slgDrvXxcjbDao" ref="slgDrvXxcjbDao"></property>
+		<property name="vehPodbspDao" ref="vehPodbspDao"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+	</bean>
+	<!-- 异地委托 -->
+	<bean name="wybpDao" class="com.ycszh.ssh.dao.ydwt.impl.WtydnsYwsbspbDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="wybpLogDao" class="com.ycszh.ssh.dao.ydwt.impl.WtydnsYwsbspbLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="wtydnsUserDao" class="com.ycszh.ssh.dao.ydwt.impl.WtydnsUserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="sjzdDao" class="com.ycszh.ssh.dao.ydwt.impl.WscgsSjzdDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pbService"
+		class="com.ycszh.ssh.service.ydwt.impl.WtydnsYwsbspbServiceImpl">
+		<property name="sjzdDao" ref="sjzdDao"></property>
+		<property name="wybpDao" ref="wybpDao"></property>
+		<property name="wtydnsUserDao" ref="wtydnsUserDao"></property>
+		<property name="wybpLogDao" ref="wybpLogDao"></property>
+	</bean>
+	<!-- 抵押登记 -->
+	<bean name="dydjUserDao" class="com.ycszh.ssh.dao.dydj.impl.DydjUserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="dydjYwsbspbDao" class="com.ycszh.ssh.dao.dydj.impl.DydjYwsbspbDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="dydjYHUserDao" class="com.ycszh.ssh.dao.dydj.impl.DydjYHUserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="dydjServiceDao" class="com.ycszh.ssh.dao.dydj.impl.DydjServiceDaomImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="dydjYhdbrDao" class="com.ycszh.ssh.dao.dydj.impl.DydjYhdbrDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="dydjYwsbspbService"
+		class="com.ycszh.ssh.service.dydj.impl.DydjYwsbspbServiceImpl">
+		<property name="dydjUserDao" ref="dydjUserDao"></property>
+		<property name="sjzdDao" ref="sjzdDao"></property>
+		<property name="dydjYHUserDao" ref="dydjYHUserDao"></property>
+		<property name="dydjYwsbspbDao" ref="dydjYwsbspbDao"></property>
+		<property name="dydjYhdbrDao" ref="dydjYhdbrDao"></property>
+	</bean>
+	<bean name="dydjService" class="com.ycszh.ssh.service.dydj.impl.DydjServiceImpl">
+		<property name="dydjServiceDao" ref="dydjServiceDao"></property>
+		<property name="dydjYwsbspbDao" ref="dydjYwsbspbDao"></property>
+	</bean>
+	<!-- 代办机构黑名单管理 -->
+	<bean name="dbjgHmdyhDao" class="com.ycszh.ssh.dao.blacklist.impl.DbjgHmdyhDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="dbjgHmdyhLogDao" class="com.ycszh.ssh.dao.blacklist.impl.DbjgHmdyhLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="dbjgSjzdDao" class="com.ycszh.ssh.dao.blacklist.impl.DbjgSjzdDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="dbjgSjzdLogDao" class="com.ycszh.ssh.dao.blacklist.impl.DbjgSjzdLogDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="blackListService"
+		class="com.ycszh.ssh.service.blacklist.impl.BlackListServiceImpl">
+		<property name="dbjgHmdyhDao" ref="dbjgHmdyhDao"></property>
+		<property name="dbjgSjzdDao" ref="dbjgSjzdDao"></property>
+		<property name="dbjgHmdyhLogDao" ref="dbjgHmdyhLogDao"></property>
+		<property name="dbjgSjzdLogDao" ref="dbjgSjzdLogDao"></property>
+
+	</bean>
+
+	<!-- 机动车联系方式变更 -->
+	<bean name="contactBgDao" class="com.ycszh.ssh.dao.jdcbg.impl.ContactBgDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_bg"></property>
+	</bean>
+	<bean name="contactBgService" class="com.ycszh.ssh.service.jdcbg.impl.ContactBgServiceImpl">
+		<property name="contactBgDao" ref="contactBgDao"></property>
+	</bean>
+
+	<!-- 网上车管所业务管理->网上车管所制证中心->相关业务统计查询  -->
+	<bean name="queryRealtedService"
+		class="com.ycszh.ssh.service.queryrelate.impl.QueryRealtedServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+
+	
+	<!-- 手机库  -->
+	<bean name="sjkInfoService"
+		class="com.ycszh.ssh.service.sjk.impl.SjkInfoServiceImpl">
+		<property name="sjkInfoDao" ref="sjkInfoDao"></property>
+	</bean>
+	
+
+	<!-- 超龄驾驶体检审核  -->
+	<bean name="cljstjDao" class="com.ycszh.ssh.dao.cljstj.impl.CljstjDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_tj"></property>
+	</bean>
+	<bean name="cljstjService" class="com.ycszh.ssh.service.cljstj.impl.CljstjServiceImpl">
+		<property name="cljstjDao" ref="cljstjDao"></property>
+	</bean>
+	
+	<!-- 免检车辆工作量统计  -->
+	<bean name="mjclService" class="com.ycszh.ssh.service.mjcl.impl.MjclServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	
+	<!-- 纯电动车辆型号与电机型号管理 -->
+	<bean name="vehTypeElectroService" class="com.ycszh.ssh.service.ddc.impl.VehtypeElectroServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	
+	<!-- 嫌疑车管理  -->
+	<bean name="xycVehDao" class="com.ycszh.ssh.dao.xyc.impl.XycVehDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="ycsXycCodeService" class="com.ycszh.ssh.service.xyc.impl.YcsXycCodeServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<bean name="ycsXycVehService" class="com.ycszh.ssh.service.xyc.impl.YcsXycVehServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="xycVehDao" ref="xycVehDao"></property>
+	</bean>
+	
+	<!-- 公交客运车辆喷涂车身广告变更登记备案管理系统-->
+	<bean name="gjbaxxspService" class="com.ycszh.ssh.service.gjgggl.impl.GjbaxxspServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<bean name="gjclycxxglService" class="com.ycszh.ssh.service.gjgggl.impl.GjclycxxglServiceImpl">
+		<property name="gjbaxxspService" ref="gjbaxxspService"></property>
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<bean name="gjclycxxglDao" class="com.ycszh.ssh.dao.gjgggl.impl.GjclycxxglDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="ggzxxglService" class="com.ycszh.ssh.service.gjgggl.impl.GgzxxglServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="gjbaxxspService" ref="gjbaxxspService"></property>
+		<property name="gjclycxxglService" ref="gjclycxxglService"></property>
+	</bean>
+	<bean name="xtglService" class="com.ycszh.ssh.service.gjgggl.impl.XtglServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="gjbaxxspService" ref="gjbaxxspService"></property>
+	</bean>
+	<bean name="tjcxService" class="com.ycszh.ssh.service.gjgggl.impl.TjcxServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="ggzxxglService" ref="ggzxxglService"></property>
+		<property name="gjbaxxspService" ref="gjbaxxspService"></property>
+		<property name="gjclycxxglService" ref="gjclycxxglService"></property>
+	</bean>
+	
+	<!-- PDA验车IMEI码登记管理 -->
+	<bean name="pdaIMEIglService" class="com.ycszh.ssh.service.pdaycimeigl.impl.PdaIMEIglServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="txbycgpsDao" ref="txbycgpsDao"/>
+	</bean>
+	
+	<!-- 考官排班 -->
+	<bean name="kgpbPbxxbService" class="com.ycszh.ssh.service.kcpb.impl.KgpbPbxxbServiceImpl">
+		<property name="kgpbPbxxbDao" ref="kgpbPbxxbDao"></property>
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<bean name="kgpbKcxxbService" class="com.ycszh.ssh.service.kcpb.impl.KgpbKcxxbServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<bean name="kgpbKgxxbService" class="com.ycszh.ssh.service.kcpb.impl.KgpbKgxxbServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<bean name="kgpbTsrqbService" class="com.ycszh.ssh.service.kcpb.impl.KgpbTsrqbServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	
+	<!-- 指标信息查询  -->
+	<bean name="zbInfoDao" class="com.ycszh.ssh.dao.mjcl.impl.ZbInfoDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<bean name="zbInfoService" class="com.ycszh.ssh.service.mjcl.impl.ZbInfoServiceImpl">
+		<property name="zbInfoDao" ref="zbInfoDao"></property>
+		<property name="defaultDao" ref="defaultDao"></property>
+	</bean>
+	<!-- 驾驶人电子影像档案采集 -->
+	<bean name="jsrdzdaService" class="com.ycszh.ssh.service.jsrdzda.impl.JsrdzdaServiceImpl">
+	    <property name="defaultDpublishDao" ref="defaultDpublishDao"></property>
+	    <property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 电子身份认证  -->
+	<bean name="sfrzCjxxbDao" class="com.ycszh.ssh.dao.sfrz.impl.SfrzCjxxbDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="fileUploadDao" class="com.ycszh.ssh.dao.sfrz.impl.FileUploadDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_efs"></property>
+	</bean>
+	<bean name="sfrzService" class="com.ycszh.ssh.service.sfrz.impl.SfrzServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="fileUploadDao" ref="fileUploadDao"></property>
+		<property name="sfrzCjxxbDao" ref="sfrzCjxxbDao"></property>
+	</bean>	
+	<!-- e中心服务  -->
+	<bean name="fileimageDao" class="com.ycszh.ssh.dao.ezxfw.impl.FileimagDaoeImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="ezxfwService" class="com.ycszh.ssh.service.ezxfw.impl.EzxfwServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="itopscDao" ref="itopscDao"></property>
+		<property name="fileimageDao" ref="fileimageDao"></property>
+	</bean>
+	
+	<!-- 车管重点机动车驾驶人管理 -->
+	<bean name="slgZdjdcjsrglService" class="com.ycszh.ssh.service.dagl.impl.SlgZdjdcjsrglServiceImpl">
+		<property name="defaultDao" ref="defaultDao"></property>
+		<property name="slgZdjdcjsrglDao" ref="slgZdjdcjsrglDao"></property>
+	</bean>
+	<!-- 警员指纹采集  -->
+	<bean name="jyzwcjService" class="com.ycszh.ssh.service.jyzwcj.impl.JyzwcjServiceImpl">
+		<property name="defaultDao" ref="defaultDao" />
+	</bean>
+	<!-- 居住证查询  -->
+	<bean name="jzzcxService" class="com.ycszh.ssh.service.jszlcx.impl.JzzcxServiceImpl">
+		<property name="defaultDao" ref="defaultDao" />
+		<property name="sessionFactory" ref="sessionFactory_itosc"/>
+	</bean>
+	<!-- 机动车驾驶人相片库查询 -->
+	<bean name="jdcjsrxpkService" class="com.ycszh.ssh.service.jdcjsrxpk.impl.JdcjsrxpkServiceImpl">
+		<property name="defaultDao" ref="defaultDao" />
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean name="defaultDao_tj" class="com.ycszh.ssh.dao.DefaultDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory_tj"></property>
+	</bean>
+	
+	<!-- 医院信息管理 -->
+	<bean name="hospitalMessageService" class="com.ycszh.ssh.service.cljstj.impl.HospitalMessageImpl">
+		<property name="defaultDao" ref="defaultDao_tj" />
+	</bean>
+	
+</beans>

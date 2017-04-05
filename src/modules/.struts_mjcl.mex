@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_mjcl" location="10,10" size="280,140">
+    <action name="mjcl_*" location="65,47" size="150,62">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="mjclList.jsp" />
+      </result>
+      <result name="listTj">
+        <resourceEdge source="listTj" routing="0" target="mjclTj.jsp" />
+      </result>
+      <result name="listsg">
+        <resourceEdge source="listsg" routing="0" target="xgslList.jsp" />
+      </result>
+    </action>
+    <action name="zb_*" location="0,0" size="0,0">
+      <result name="zbInfo">
+        <resourceEdge source="zbInfo" routing="0" target="zbInfo.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="mjclList.jsp" path="/pages/mjcl/mjclList.jsp" location="62,205" size="150,55" />
+  <webResource name="mjclTj.jsp" path="/pages/mjcl/mjclTj.jsp" location="348,30" size="150,55" />
+  <webResource name="xgslList.jsp" path="/pages/mjcl/xgslList.jsp" location="0,0" size="0,0" />
+  <webResource name="zbInfo.jsp" path="/pages/mjcl/zbInfo.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

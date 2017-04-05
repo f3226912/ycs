@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_drv" extends="/ycszh" namespace="/drv">
+		<action name="*" class="com.ycszh.ssh.action.drv.SlgDrvAction" method="{1}">
+			<result name="list">/pages/drv/list.jsp</result>
+			<result name="list2">/pages/drv/list2.jsp</result>
+			<result name="insert">/pages/drv/edit.jsp</result>
+			<result name="insert2">/pages/drv/edit2.jsp</result>
+			<result name="update">/pages/drv/edit2.jsp</result>
+			<result name="view">/pages/drv/edit.jsp</result>
+			<result name="view2">/pages/drv/edit2.jsp</result>
+			<result name="print">/pages/drv/print.jsp</result>
+			<result name="cxtjdrv">/pages/drv/drvtjlist.jsp</result>
+			<result name="initdrv">/pages/drv/initdrvtjView.jsp</result>
+		</action>
+		<action name="download" class="com.ycszh.ssh.action.drv.SlgDrvAction">
+			<param name="inputPath">/files/install.rar</param>
+			<result name="success" type="stream">
+				<param name="contentType">application/rar</param>
+				<param name="inputName">rarFile</param>
+				<param name="contentDisposition">filename="install.rar"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		
+		<action name="download2" class="com.ycszh.ssh.action.drv.SlgDrvAction">
+			<param name="inputPath">/files/install2.rar</param>
+			<result name="success" type="stream">
+				<param name="contentType">application/rar</param>
+				<param name="inputName">rarFile2</param>
+				<param name="contentDisposition">filename="install2.rar"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		
+	</package>
+	
+	<package name="dzda" extends="/ycszh" namespace="/dzda" >
+		<action name="dzda_*" class="com.ycszh.ssh.action.drv.CldzdacxAction" method="{1}">
+			<result name="imaList">/pages/dzda/dzda.jsp</result>
+		</action>
+	</package>
+	
+	<package name="drv_ajax" extends="json-default" namespace="/drv_ajax">
+		<action name="getDaxx" class="com.ycszh.ssh.action.drv.SlgDrvAction" method="getDaxx">
+			<result type="json" name="success">
+				<param name="root">list</param>
+			</result>
+		</action>
+		<action name="pjwdkyy" class="com.ycszh.ssh.action.drv.SlgDrvAction" method="getNotIDCardrs">
+			<result type="json" name="success">
+				<param name="root">slgSList</param>
+			</result>
+		</action>
+		<action name="ywlxajax" class="com.ycszh.ssh.action.drv.SlgDrvAction" method="getYwlxYwyy">
+			<result type="json" name="success">
+				<param name="root">slgSjzds</param>
+			</result>
+		</action>
+	</package>
+</struts>

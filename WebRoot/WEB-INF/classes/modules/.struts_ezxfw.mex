@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_ezxfw" location="0,0" size="0,0">
+    <action name="ezxfw_*" location="0,0" size="0,0">
+      <result name="drvchanlist">
+        <resourceEdge source="drvchanlist" routing="0" target="drvchanlist.jsp" />
+      </result>
+      <result name="drvlscxlist">
+        <resourceEdge source="drvlscxlist" routing="0" target="drvLscxlist.jsp" />
+      </result>
+      <result name="jdclscxlist">
+        <resourceEdge source="jdclscxlist" routing="0" target="jdcLscxlist.jsp" />
+      </result>
+      <result name="drvchanview">
+        <resourceEdge source="drvchanview" routing="0" target="drvchanview.jsp" />
+      </result>
+      <result name="jdcchanlist">
+        <resourceEdge source="jdcchanlist" routing="0" target="jdcchanlist.jsp" />
+      </result>
+      <result name="jdcchanview">
+        <resourceEdge source="jdcchanview" routing="0" target="jdcchanview.jsp" />
+      </result>
+      <result name="chanlist">
+        <resourceEdge source="chanlist" routing="0" target="chanlist.jsp" />
+      </result>
+      <result name="chanview">
+        <resourceEdge source="chanview" routing="0" target="chanview.jsp" />
+      </result>
+      <result name="drvchecklist">
+        <resourceEdge source="drvchecklist" routing="0" target="drvchecklist.jsp" />
+      </result>
+      <result name="jdcchecklist">
+        <resourceEdge source="jdcchecklist" routing="0" target="jdchecklist.jsp" />
+      </result>
+      <result name="drvcheckview">
+        <resourceEdge source="drvcheckview" routing="0" target="drvcheckview.jsp" />
+      </result>
+      <result name="jdccheckview">
+        <resourceEdge source="jdccheckview" routing="0" target="jdccheckview.jsp" />
+      </result>
+      <result name="drvgzllist">
+        <resourceEdge source="drvgzllist" routing="0" target="drvgzllist.jsp" />
+      </result>
+      <result name="drvgzlview">
+        <resourceEdge source="drvgzlview" routing="0" target="drvgzlview.jsp" />
+      </result>
+      <result name="jdcgzllist">
+        <resourceEdge source="jdcgzllist" routing="0" target="jdcgzllist.jsp" />
+      </result>
+      <result name="jdcgzlview">
+        <resourceEdge source="jdcgzlview" routing="0" target="jdcgzlview.jsp" />
+      </result>
+      <result name="drvshowPrint">
+        <resourceEdge source="drvshowPrint" routing="0" target="drvprintShow.jsp" />
+      </result>
+      <result name="jdcshowPrint">
+        <resourceEdge source="jdcshowPrint" routing="0" target="jdcprintShow.jsp" />
+      </result>
+      <result name="ezXxdPrintlist">
+        <resourceEdge source="ezXxdPrintlist" routing="0" target="ezXxdPrintlist.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="ezxfw_ajax" location="0,0" size="0,0">
+    <action name="getChanList" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/sfrz/list.jsp" location="584,220" size="150,55" />
+  <webResource name="edit.jsp" path="/pages/sfrz/edit.jsp" location="24,325" size="150,55" />
+  <webResource name="print.jsp" path="/pages/sfrz/print.jsp" location="301,10" size="150,55" />
+  <webResource name="drvchanlist.jsp" path="/pages/ezxfw/drvchanlist.jsp" location="0,0" size="0,0" />
+  <webResource name="drvchanview.jsp" path="/pages/ezxfw/drvchanview.jsp" location="0,0" size="0,0" />
+  <webResource name="jdcchanlist.jsp" path="/pages/ezxfw/jdcchanlist.jsp" location="0,0" size="0,0" />
+  <webResource name="jdcchanview.jsp" path="/pages/ezxfw/jdcchanview.jsp" location="0,0" size="0,0" />
+  <webResource name="chanlist.jsp" path="/pages/ezxfw/chanlist.jsp" location="0,0" size="0,0" />
+  <webResource name="chanview.jsp" path="/pages/ezxfw/chanview.jsp" location="0,0" size="0,0" />
+  <webResource name="drvchecklist.jsp" path="/pages/ezxfw/drvchecklist.jsp" location="0,0" size="0,0" />
+  <webResource name="jdchecklist.jsp" path="/pages/ezxfw/jdchecklist.jsp" location="0,0" size="0,0" />
+  <webResource name="drvcheckview.jsp" path="/pages/ezxfw/drvcheckview.jsp" location="0,0" size="0,0" />
+  <webResource name="jdccheckview.jsp" path="/pages/ezxfw/jdccheckview.jsp" location="0,0" size="0,0" />
+  <webResource name="drvgzllist.jsp" path="/pages/ezxfw/drvgzllist.jsp" location="0,0" size="0,0" />
+  <webResource name="drvgzlview.jsp" path="/pages/ezxfw/drvgzlview.jsp" location="0,0" size="0,0" />
+  <webResource name="jdcgzllist.jsp" path="/pages/ezxfw/jdcgzllist.jsp" location="0,0" size="0,0" />
+  <webResource name="jdcgzlview.jsp" path="/pages/ezxfw/jdcgzlview.jsp" location="0,0" size="0,0" />
+  <webResource name="showPic.jsp" path="/pages/ezxfw/showPic.jsp" location="0,0" size="0,0" />
+  <webResource name="drvprintShow.jsp" path="/pages/ezxfw/drvprintShow.jsp" location="0,0" size="0,0" />
+  <webResource name="jdcprintShow.jsp" path="/pages/ezxfw/jdcprintShow.jsp" location="0,0" size="0,0" />
+  <webResource name="drvLscxlist.jsp" path="/pages/ezxfw/drvLscxlist.jsp" location="0,0" size="0,0" />
+  <webResource name="jdcLscxlist.jsp" path="/pages/ezxfw/jdcLscxlist.jsp" location="0,0" size="0,0" />
+  <webResource name="ezXxdPrintlist.jsp" path="/pages/ezxfw/ezXxdPrintlist.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

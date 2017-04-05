@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="/dept" location="0,0" size="0,0">
+    <action name="dept_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="list.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="edit.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="edit.jsp" />
+      </result>
+      <result name="view">
+        <resourceEdge source="view" routing="0" target="view.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/dept/list.jsp" location="150,430" size="150,55" />
+  <webResource name="edit.jsp" path="/pages/dept/edit.jsp" location="10,10" size="150,55" />
+  <webResource name="view.jsp" path="/pages/dept/view.jsp" location="430,220" size="150,55" />
+</Struts2Diagram>
+

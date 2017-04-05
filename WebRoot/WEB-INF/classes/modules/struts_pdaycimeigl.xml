@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="/pdaimei" extends="/ycszh" namespace="/pdaimei">
+		<action name="imei_*" class="pdaIMEIglAction" method="{1}">
+			<result name="tPdaYcimei">/pages/pdaycimeigl/pdaIMEIgl.jsp</result>
+			<result name="tPdaYcimeiChange">/pages/pdaycimeigl/pdaIMEIgl_detail.jsp</result>
+			<result name="tPdaYcimeiAdd">/pages/pdaycimeigl/pdaIMEIgl_add.jsp</result>
+		</action>
+	</package>
+</struts>

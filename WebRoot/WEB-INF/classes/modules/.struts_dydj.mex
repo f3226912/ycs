@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_dydj" location="0,0" size="0,0">
+    <action name="dydj_*" location="0,0" size="0,0">
+      <result name="userList">
+        <resourceEdge source="userList" routing="0" target="userList.jsp" />
+      </result>
+      <result name="yhUserList">
+        <resourceEdge source="yhUserList" routing="0" target="yhUserList.jsp" />
+      </result>
+      <result name="initAdd">
+        <resourceEdge source="initAdd" routing="0" target="addUser.jsp" />
+      </result>
+      <result name="initYhAdd">
+        <resourceEdge source="initYhAdd" routing="0" target="addYHUser.jsp" />
+      </result>
+      <result name="dydjYhdbrList">
+        <resourceEdge source="dydjYhdbrList" routing="0" target="dydjYhdbrList.jsp" />
+      </result>
+    </action>
+    <action name="yhsl_*" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="userList.jsp" />
+      </result>
+      <result name="dydjlist">
+        <resourceEdge source="dydjlist" routing="0" target="dydjVehList.jsp" />
+      </result>
+      <result name="yhdetail">
+        <resourceEdge source="yhdetail" routing="0" target="sbDetail.jsp" />
+      </result>
+      <result name="zzdetail">
+        <resourceEdge source="zzdetail" routing="0" target="personDetail.jsp" />
+      </result>
+      <result name="grdetail">
+        <resourceEdge source="grdetail" routing="0" target="yjGedyGe.jsp" />
+      </result>
+      <result name="warnDydj">
+        <resourceEdge source="warnDydj" routing="0" target="warnDydj.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="businessList.jsp" path="/pages/ydwt/businessManage/businessList.jsp" location="543,500" size="150,55" />
+  <webResource name="declareAndQuit.jsp" path="/pages/ydwt/statistics/declareAndQuit.jsp" location="199,500" size="150,55" />
+  <webResource name="posQuit.jsp" path="/pages/ydwt/statistics/posQuit.jsp" location="10,255" size="150,55" />
+  <webResource name="userList.jsp" path="/pages/ydwt/user/userList.jsp" location="585,10" size="150,55" />
+  <webResource name="addUser.jsp" path="/pages/ydwt/user/addUser.jsp" location="1148,255" size="150,55" />
+  <webResource name="businessDetail.jsp" path="/pages/ydwt/businessManage/businessDetail.jsp" location="922,500" size="150,55" />
+  <webResource name="userList.jsp" path="/pages/dydj/user/userList.jsp" location="0,0" size="0,0" />
+  <webResource name="addUser.jsp" path="/pages/dydj/user/addUser.jsp" location="0,0" size="0,0" />
+  <webResource name="yhUserList.jsp" path="/pages/dydj/user/yhUserList.jsp" location="0,0" size="0,0" />
+  <webResource name="addYHUser.jsp" path="/pages/dydj/user/addYHUser.jsp" location="0,0" size="0,0" />
+  <webResource name="spcxlist.jsp" path="/pages/dydj/spcxlist.jsp" location="0,0" size="0,0" />
+  <webResource name="dydjVehList.jsp" path="/pages/dydj/dydjVehList.jsp" location="0,0" size="0,0" />
+  <webResource name="dydjYhdbrList.jsp" path="/pages/dydj/dydjYhdbrList.jsp" location="0,0" size="0,0" />
+  <webResource name="sbDetail.jsp" path="/pages/dydj/sbDetail.jsp" location="0,0" size="0,0" />
+  <webResource name="personDetail.jsp" path="/pages/dydj/personDetail.jsp" location="0,0" size="0,0" />
+  <webResource name="yjGedyGe.jsp" path="/pages/dydj/yjGedyGe.jsp" location="0,0" size="0,0" />
+  <webResource name="warnDydj.jsp" path="/pages/dydj/warnDydj.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

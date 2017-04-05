@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_drv" location="290,270" size="560,595">
+    <action name="*" location="65,89" size="150,188">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="list.jsp" />
+      </result>
+      <result name="list2">
+        <resourceEdge source="list2" routing="0" target="list2.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="edit.jsp" />
+      </result>
+      <result name="insert2">
+        <resourceEdge source="insert2" routing="0" target="edit2.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="edit2.jsp" />
+      </result>
+      <result name="view">
+        <resourceEdge source="view" routing="0" target="edit.jsp" />
+      </result>
+      <result name="view2">
+        <resourceEdge source="view2" routing="0" target="edit2.jsp" />
+      </result>
+      <result name="print">
+        <resourceEdge source="print" routing="0" target="print.jsp" />
+      </result>
+    </action>
+    <action name="download" location="65,512" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="download2" location="310,512" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="dzda" location="13,970" size="280,140">
+    <action name="dzda_*" location="65,57" size="150,41">
+      <result name="imaList">
+        <resourceEdge source="imaList" routing="0" target="dzda.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="drv_ajax" location="1148,24" size="180,351">
+    <action name="getDaxx" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="pjwdkyy" location="15,163" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ywlxajax" location="15,303" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/drv/list.jsp" location="917,395" size="150,55" />
+  <webResource name="list2.jsp" path="/pages/drv/list2.jsp" location="74,570" size="150,55" />
+  <webResource name="edit.jsp" path="/pages/drv/edit.jsp" location="77,395" size="150,55" />
+  <webResource name="edit2.jsp" path="/pages/drv/edit2.jsp" location="354,10" size="150,55" />
+  <webResource name="print.jsp" path="/pages/drv/print.jsp" location="599,115" size="150,55" />
+  <webResource name="dzda.jsp" path="/pages/dzda/dzda.jsp" location="77,1165" size="150,55" />
+</Struts2Diagram>
+

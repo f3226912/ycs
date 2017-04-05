@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name="com.ycszh.ssh.hbm.gjgggl.BusGgjgBase" table="BUS_GGJG_BASE">
+		<id name="ggjgid" type="java.lang.String">
+			<column name="GGJGID" length="20" />
+			<generator class="assigned" />
+		</id>
+		<property name="ggjgmm" type="java.lang.String">
+			<column name="GGJGMM" length="200" />
+		</property>
+		<property name="ggjgmc" type="java.lang.String">
+			<column name="GGJGMC" length="50" />
+		</property>
+		<property name="zzjgdm" type="java.lang.String">
+			<column name="ZZJGDM" length="30" />
+		</property>
+		<property name="zzr" type="java.lang.String">
+			<column name="ZZR" length="40" />
+		</property>
+		<property name="dz" type="java.lang.String">
+			<column name="DZ" length="120" />
+		</property>
+		<property name="lxdh" type="java.lang.String">
+			<column name="LXDH" length="20" />
+		</property>
+		<property name="zt" type="java.lang.String">
+			<column name="ZT" length="2" />
+		</property>
+		<property name="gjgsid" type="java.lang.String">
+			<column name="GJGSID" length="20" />
+		</property>
+		<property name="lrsj" type="java.util.Date">
+			<column name="LRSJ" length="7" />
+		</property>
+		<property name="lrip" type="java.lang.String">
+			<column name="LRIP" length="20" />
+		</property>
+		<property name="lrmac" type="java.lang.String">
+			<column name="LRMAC" length="20" />
+		</property>
+		<property name="shzt" type="java.lang.String">
+			<column name="SHZT" length="2" />
+		</property>
+		<property name="bz" type="java.lang.String">
+			<column name="BZ" length="300" />
+		</property>
+		<property name="shdm" type="java.lang.String">
+			<column name="SHDM" length="10" />
+		</property>
+		<property name="shxm" type="java.lang.String">
+			<column name="SHXM" length="20" />
+		</property>
+		<property name="shbm" type="java.lang.String">
+			<column name="SHBM" length="150" />
+		</property>
+		<property name="shbmKj" type="java.lang.String">
+			<column name="SHBM_KJ" length="150" />
+		</property>
+		<property name="shsj" type="java.util.Date">
+			<column name="SHSJ" length="7" />
+		</property>
+		<property name="ship" type="java.lang.String">
+			<column name="SHIP" length="15" />
+		</property>
+		<property name="shmac" type="java.lang.String">
+			<column name="SHMAC" length="25" />
+		</property>
+		<property name="synFlag" type="java.lang.String">
+			<column name="SYN_FLAG" length="10" />
+		</property>
+		<property name="tranDate" type="java.util.Date">
+			<column name="TRAN_DATE" length="7" />
+		</property>
+		<property name="tranFlag" type="java.lang.String">
+			<column name="TRAN_FLAG" length="10" />
+		</property>
+	</class>
+</hibernate-mapping>

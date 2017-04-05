@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ycszh.ssh.hbm.pdaycimeigl.TPdaYcimeiLog" table="T_PDA_YCIMEI_LOG" >
+        <composite-id>
+            <key-property name="id" type="java.lang.String">
+                <column name="ID" length="40" />
+            </key-property>
+            <key-property name="imei" type="java.lang.String">
+                <column name="IMEI" length="60" />
+            </key-property>
+            <key-property name="bdyh" type="java.lang.String">
+                <column name="BDYH" length="40" />
+            </key-property>
+            <key-property name="bdbm" type="java.lang.String">
+                <column name="BDBM" length="100" />
+            </key-property>
+            <key-property name="bdbmKj" type="java.lang.String">
+                <column name="BDBM_KJ" length="100" />
+            </key-property>
+            <key-property name="lrsj" type="java.util.Date">
+                <column name="LRSJ" length="7" />
+            </key-property>
+            <key-property name="bz" type="java.lang.String">
+                <column name="BZ" length="200" />
+            </key-property>
+            <key-property name="czr" type="java.lang.String">
+                <column name="CZR" length="20" />
+            </key-property>
+            <key-property name="czrxm" type="java.lang.String">
+                <column name="CZRXM" length="30" />
+            </key-property>
+            <key-property name="czrbm" type="java.lang.String">
+                <column name="CZRBM" length="30" />
+            </key-property>
+            <key-property name="czrbmKj" type="java.lang.String">
+                <column name="CZRBM_KJ" length="30" />
+            </key-property>
+            <key-property name="czrq" type="java.util.Date">
+                <column name="CZRQ" length="7" />
+            </key-property>
+            <key-property name="czip" type="java.lang.String">
+                <column name="CZIP" length="20" />
+            </key-property>
+            <key-property name="czmac" type="java.lang.String">
+                <column name="CZMAC" length="30" />
+            </key-property>
+            <key-property name="cznr" type="java.lang.String">
+                <column name="CZNR" length="30" />
+            </key-property>
+            <key-property name="zt" type="java.lang.String">
+                <column name="ZT" length="2" />
+            </key-property>
+            <key-property name="zyptbj" type="java.lang.String">
+                <column name="ZYPTBJ" length="20" />
+            </key-property>
+	        <key-property name="gpsid" type="java.lang.String">
+	            <column name="GPS_ID" length="10" />
+	        </key-property>
+	        <key-property name="dwbj" type="java.lang.String">
+	            <column name="DWBJ" length="10" />
+	        </key-property>
+	        <key-property name="sjyzbj" type="java.lang.String">
+	            <column name="SJYZBJ" length="10" />
+	        </key-property>            
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- 将Service注入Action -->
+	<bean name="slgDrvAction" class="com.ycszh.ssh.action.drv.SlgDrvAction">
+		<property name="yujingService" ref="yujingService"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+		<property name="slgService" ref="slgService"></property>
+	</bean>
+	
+	<!-- 验车字典管理 -->
+	<bean name="yczdglAction" class="com.ycszh.ssh.action.yanche.YczdglAction">
+		<property name="yczdglService" ref="yczdglService" />
+	</bean>
+	
+	<bean name="pdasmycChbaseAction" class="com.ycszh.ssh.action.yanche.PdasmycChbaseAction">
+		<property name="pdasmycChbaseService" ref="pdasmycChbaseService" />
+	</bean>
+	
+	<bean name="pdasmycChdlrAction" class="com.ycszh.ssh.action.yanche.PdasmycChdlrAction">
+		<property name="pdasmycChdlrService" ref="pdasmycChdlrService" />
+	</bean>
+	
+	<bean name="pdasmycVehPcbAction" class="com.ycszh.ssh.action.yanche.PdasmycVehPcbAction">
+		<property name="pdasmycVehPcbService" ref="pdasmycVehPcbService" />
+	</bean>
+	
+	<bean name="yujingAction" class="com.ycszh.ssh.action.drv.YujingAction">
+		<property name="yujingService" ref="yujingService"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+	</bean>
+	<bean name="slgSpxxAction" class="com.ycszh.ssh.action.drv.SlgSpxxAction">
+		<property name="slgService" ref="slgService"></property>
+	</bean>
+	<bean name="cldzdaAction" class="com.ycszh.ssh.action.drv.CldzdacxAction">
+		<property name="cldzdacxService" ref="cldzdacxService"></property>
+	</bean>
+	<!-- 国税联网查询-->
+	<bean name="guoShuiLianwAction" class="com.ycszh.ssh.action.guoshui.GuoshuiLianwAction">
+		<property name="guoShuiLianwService" ref="guoShuiLianwService"></property>
+	</bean>
+	<!-- 验车流水管理-->
+	<bean name="ywlsglVehFlowAction" class="com.ycszh.ssh.action.yanche.YwlsglVehFlowAction">
+		<property name="ywlsglVehFlowService" ref="ywlsglVehFlowService"></property>
+		<property name="pdasmycVehPcbService" ref="pdasmycVehPcbService"></property>
+	</bean> 
+	<!-- 报废车信息管理-->
+	<bean name="bfcJbxxbAction" class="com.ycszh.ssh.action.bfc.BfcJbxxbAction">
+		<property name="bfcJbxxbService" ref="bfcJbxxbService"></property>
+	</bean>
+	<!-- 报废车特殊审批-->
+	<bean name="bfcTsspbAction" class="com.ycszh.ssh.action.bfc.BfcTsspbAction">
+		<property name="bfcTsspbService" ref="bfcTsspbService"></property>
+	</bean>
+	<!-- 报废车监管锁控表-->
+	<bean name="bfcJgskbAction" class="com.ycszh.ssh.action.bfc.BfcJgskbAction">
+		<property name="bfcJgskbService" ref="bfcJgskbService"></property>
+	</bean>
+	<!-- 机动车受理 -->
+	<bean name="slgVehAction" class="com.ycszh.ssh.action.veh.SlgVehAction">
+		<property name="slgVehService" ref="slgVehService"></property>
+		<property name="slgService" ref="slgService"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+		<property name="dydjService" ref="dydjService"></property>
+	</bean>
+	<!-- 机动车受理 -无拍照-->
+	<bean name="slgVehWpzAction" class="com.ycszh.ssh.action.veh.SlgVehWpzAction">
+		<property name="slgVehService" ref="slgVehService"></property>
+		<property name="slgService" ref="slgService"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+		<property name="dydjService" ref="dydjService"></property>
+		<property name="jdcslWpzService" ref="jdcslWpzService"></property>
+		<property name="ptdo" ref="ptdo"></property>
+	</bean>
+	<!-- 初始化VehicleTempMidTest实体类 -->
+	<bean name="ptdo" class="com.ycszh.ssh.hbm.veh.VehicleTempMidTest"></bean>
+	<!-- 机动车受理 审批-->
+	<bean name="vehSpAction" class="com.ycszh.ssh.action.veh.VehSpAction">
+		<property name="vehSpService" ref="vehSpService"></property>
+		<property name="slgDrvService" ref="slgDrvService"></property>
+	</bean>
+	<!-- 异地委托  -->
+    <bean name="ydwtAction" class="com.ycszh.ssh.action.ydwt.YdwtManageAction">
+       <property name="pbService" ref="pbService"></property>
+    </bean>
+    <!-- 抵押登记 -->
+    <bean name="dydjManageAction" class="com.ycszh.ssh.action.dydj.DydjManageAction">
+        <property name="dydjYwsbspbService" ref="dydjYwsbspbService"></property>
+    </bean>
+    <bean name="dydjServiceAction" class="com.ycszh.ssh.action.dydj.DydjServiceAction">
+    	<property name="dydjService" ref="dydjService"></property>
+    	<property name="slgDrvService" ref="slgDrvService"></property>
+    	<property name="slgVehService" ref="slgVehService"></property>
+    </bean>
+    <!-- 代办黑名单管理 -->
+     <bean name="blacklistAction" class="com.ycszh.ssh.action.blacklist.BlackListManageAction">
+        <property name="blackListService" ref="blackListService"></property>
+     </bean>
+
+    <!-- 机动车联系方式变更 -->
+    <bean name="contactBgAction" class="com.ycszh.ssh.action.jdcbg.ContactBgAction">
+        <property name="contactBgService" ref="contactBgService"></property>
+     </bean>
+     
+    <!-- 网上车管所业务管理->网上车管所制证中心->相关业务统计查询  -->
+    <bean name="queryRelatedAction" class="com.ycszh.ssh.action.queryrelate.QueryRelatedAction">
+    	<property name="queryRealtedService" ref="queryRealtedService"></property>
+    </bean>
+	
+	
+     <!-- 手机库  -->
+    <bean name="sjkAction" class="com.ycszh.ssh.action.sjk.SjkInfoAction">
+        <property name="sjkInfoService" ref="sjkInfoService"></property>
+     </bean>
+	
+	<!-- 超龄驾驶体检审核  -->
+    <bean name="cljstjAction" class="com.ycszh.ssh.action.cljstj.CljstjAction">
+        <property name="cljstjService" ref="cljstjService"></property>
+     </bean>
+     
+     <!-- 医院信息管理 -->
+     <bean name="hospitalMessageAction" class="com.ycszh.ssh.action.cljstj.HospitalMessageAction">
+        <property name="hospitalMessageService" ref="hospitalMessageService"></property>
+     </bean>
+     
+     <!-- 免检车辆工作量统计  -->
+    <bean name="mjclAction" class="com.ycszh.ssh.action.mjcl.MjclAction">
+        <property name="mjclService" ref="mjclService"></property>
+     </bean>
+     
+     <!-- 纯电动车辆型号与电机型号管理 -->
+     <bean name="vehTypeElectroAction" class="com.ycszh.ssh.action.ddc.VehtypeElectroAction">
+     	<property name="vehTypeElectroService" ref="vehTypeElectroService"></property>
+     </bean>
+     
+     <!-- 公交客运车辆喷涂车身广告变更登记备案管理系统-->
+     <bean name="gjbaxxspAction" class="com.ycszh.ssh.action.gjgggl.GjbaxxspAction">
+     	<property name="gjbaxxspService" ref="gjbaxxspService"></property>
+     </bean>
+     <bean name="gjclycxxglAction" class="com.ycszh.ssh.action.gjgggl.GjclycxxglAction">
+     	<property name="gjclycxxglService" ref="gjclycxxglService"></property>
+     </bean>
+     <bean name="ggzxxglAction" class="com.ycszh.ssh.action.gjgggl.GgzxxglAction">
+     	<property name="ggzxxglService" ref="ggzxxglService"></property>
+     </bean>
+     <bean name="xtglAction" class="com.ycszh.ssh.action.gjgggl.XtglAction">
+     	<property name="xtglService" ref="xtglService"></property>
+     </bean>
+     <bean name="tjcxAction" class="com.ycszh.ssh.action.gjgggl.TjcxAction">
+     	<property name="tjcxService" ref="tjcxService"></property>
+     </bean>
+     
+     <!-- PDA验车IMEI码登记管理 -->
+     <bean name="pdaIMEIglAction" class="com.ycszh.ssh.action.pdaycimeigl.PdaIMEIglAction">
+     	<property name="pdaIMEIglService" ref="pdaIMEIglService"></property>
+     </bean>
+     
+     <!-- 嫌疑车管理 -->
+     <bean name="ycsXycCodeAction" class="com.ycszh.ssh.action.xyc.YcsXycCodeAction">
+     	<property name="ycsXycCodeService" ref="ycsXycCodeService"></property>
+     </bean>
+     <bean name="ycsXycVehAction" class="com.ycszh.ssh.action.xyc.YcsXycVehAction">
+     	<property name="ycsXycVehService" ref="ycsXycVehService"></property>
+     </bean>
+
+	<!-- 考官排班 -->
+	<bean name="kgpbPbxxbAction" class="com.ycszh.ssh.action.kgpb.KgpbPbxxbAction">
+     	<property name="kgpbKcxxbService" ref="kgpbKcxxbService"></property>
+     	<property name="kgpbPbxxbService" ref="kgpbPbxxbService"></property>
+     	<property name="kgpbKgxxbService" ref="kgpbKgxxbService"></property>
+    </bean>
+    <bean name="kgpbKcxxbAction" class="com.ycszh.ssh.action.kgpb.KgpbKcxxbAction">
+     	<property name="kgpbKcxxbService" ref="kgpbKcxxbService"></property>
+     	<property name="kgpbKgxxbService" ref="kgpbKgxxbService"></property>
+    </bean>
+    <bean name="kgpbKgxxbAction" class="com.ycszh.ssh.action.kgpb.KgpbKgxxbAction">
+     	<property name="kgpbKgxxbService" ref="kgpbKgxxbService"></property>
+    </bean>
+    <bean name="kgpbTsrqbAction" class="com.ycszh.ssh.action.kgpb.KgpbTsrqbAction">
+     	<property name="kgpbTsrqbService" ref="kgpbTsrqbService"></property>
+    </bean>
+    <!-- 驾驶人电子影像档案采集 -->
+    	<bean name="jsrdzdaAction" class="com.ycszh.ssh.action.jsrdzda.JsrdzdaAction">
+     	<property name="jsrdzdaService" ref="jsrdzdaService"></property>
+    </bean>
+    <!-- 电子身份认证 -->
+    <bean name="sfrzAction" class="com.ycszh.ssh.action.sfrz.SfrzAction">
+     	<property name="sfrzService" ref="sfrzService"></property>
+    </bean>
+    
+    <!-- e中心服务 -->
+    <bean name="ezxfwAction" class="com.ycszh.ssh.action.ezxfw.EzxfwAction" >
+     	<property name="ezxfwService" ref="ezxfwService"></property>
+     	<property name="sfrzService" ref="sfrzService"></property>
+     	
+    </bean>
+    <bean name="vehSupervise" class="com.ycszh.formbean.VehSuperviseForm" scope="prototype"></bean>
+    <bean name="drvSupervise" class="com.ycszh.formbean.DrvSuperviseForm" scope="prototype"></bean>
+    
+    <!-- 车管重点机动车驾驶人管理 -->
+    <bean name="slgZdjdcjsrglAction" class="com.ycszh.ssh.action.dagl.SlgZdjdcjsrglAction">
+    	<property name="slgZdjdcjsrglService" ref="slgZdjdcjsrglService"></property>
+    </bean>
+    
+    <!-- 警员指纹采集 -->
+    <bean name="jyzwcjAction" class="com.ycszh.ssh.action.jyzwcj.JyzwcjAction">
+    	<property name="jyzwcjService" ref="jyzwcjService"></property>
+    </bean>
+    
+    <!-- 居住证查询 -->
+    <bean name="jzzcxAction" class="com.ycszh.ssh.action.jszlcx.JzzcxAction">
+    	<property name="jzzcxService" ref="jzzcxService"/>
+    </bean>
+    
+    <!-- 机动车驾驶人相片库查询 -->
+    <bean name="jdcjsrxpkAction" class="com.ycszh.ssh.action.jdcjsrxpk.JdcjsrxpkAction">
+    	<property name="jdcjsrxpkService" ref="jdcjsrxpkService"/>
+    </bean>
+    
+</beans>

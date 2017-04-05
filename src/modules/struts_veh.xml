@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_veh" extends="/ycszh" namespace="/veh">
+		<action name="veh_*" class="com.ycszh.ssh.action.veh.SlgVehAction" method="{1}">
+			<result name="insert">/pages/veh/jdcsledit.jsp</result>
+			<result name="lshselect">/pages/veh/jdcsledit.jsp</result>
+			<result name="spcxlist">/pages/veh/spcxlist.jsp</result>
+			<result name="view">/pages/veh/jdcsledit.jsp</result>
+			<result name="edit_zchf">/pages/veh/jdcsl_zchf.jsp</result>
+			<result name="edit_tbyw">/pages/veh/jdcsledit.jsp</result>
+			<result name="zbxxList">/pages/veh/jdccjlist.jsp</result>
+		</action>
+		<action name="vehSpxx_*" class="com.ycszh.ssh.action.veh.VehSpAction" method="{1}">
+			<result name="list">/pages/veh/splist.jsp</result>
+			<result name="edit">/pages/veh/spedit.jsp</result>
+			<result name="posplist">/pages/veh/posplist.jsp</result>
+			<result name="pospedit">/pages/veh/pospedit.jsp</result>
+		</action>
+		
+	</package>
+	
+	<package name="veh_ajax" extends="json-default" namespace="/veh_ajax">
+		<action name="getVehicleByLsh" class="com.ycszh.ssh.action.veh.SlgVehAction" method="getVehicleByLsh">
+			<result type="json" name="success">
+				<param name="root">vehicle</param>
+			</result>
+		</action>
+		
+		<action name="vehAjax_*" class="com.ycszh.ssh.action.veh.SlgVehAction" method="{1}">
+			<result type="json" name="mustlsh">
+				<param name="root">result</param>
+			</result>
+			<result type="json" name="vehtempinbylsh">
+				<param name="root">ptdoin</param>
+			</result>
+			<result type="json" name="temporaryLicenseByLsh">
+				<param name="root">tpLicense</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="/delVehSpxx" extends="json-default" namespace="/vehSpxx">
+		<action name="vehSpxx_*" class="com.ycszh.ssh.action.veh.VehSpAction" method="{1}">
+			<result type="json" name="success">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>

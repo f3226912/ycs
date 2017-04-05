@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_sjk" location="238,165" size="280,210">
+    <action name="jdcbg_*" location="65,61" size="150,104">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="jdcbgList.jsp" />
+      </result>
+      <result name="jdcbgsh">
+        <resourceEdge source="jdcbgsh" routing="0" target="jdcbgsh.jsp" />
+      </result>
+      <result name="querylist">
+        <resourceEdge source="querylist" routing="0" target="jdcbgquery.jsp" />
+      </result>
+      <result name="jdcbgck">
+        <resourceEdge source="jdcbgck" routing="0" target="jdcbgck.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="jdcbgList.jsp" path="/pages/jdcbg/jdcbgList.jsp" location="284,430" size="150,55" />
+  <webResource name="jdcbgsh.jsp" path="/pages/jdcbg/jdcbgsh.jsp" location="10,220" size="150,55" />
+  <webResource name="jdcbgquery.jsp" path="/pages/jdcbg/jdcbgquery.jsp" location="281,10" size="150,55" />
+  <webResource name="jdcbgck.jsp" path="/pages/jdcbg/jdcbgck.jsp" location="570,220" size="150,55" />
+</Struts2Diagram>
+

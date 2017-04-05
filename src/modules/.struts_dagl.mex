@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_dagl" location="0,0" size="0,0">
+    <action name="jdcjsrgl_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="zdjdcjsrglList.jsp" />
+      </result>
+      <result name="initEdit">
+        <resourceEdge source="initEdit" routing="0" target="zdjdcjsrglEdit.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/drv/list.jsp" location="2019,395" size="150,55" />
+  <webResource name="list2.jsp" path="/pages/drv/list2.jsp" location="126,115" size="150,55" />
+  <webResource name="edit.jsp" path="/pages/drv/edit.jsp" location="374,115" size="150,55" />
+  <webResource name="edit2.jsp" path="/pages/drv/edit2.jsp" location="616,10" size="150,55" />
+  <webResource name="print.jsp" path="/pages/drv/print.jsp" location="861,115" size="150,55" />
+  <webResource name="drvtjlist.jsp" path="/pages/drv/drvtjlist.jsp" location="1094,115" size="150,55" />
+  <webResource name="initdrvtjView.jsp" path="/pages/drv/initdrvtjView.jsp" location="1327,115" size="150,55" />
+  <webResource name="dzda.jsp" path="/pages/dzda/dzda.jsp" location="374,1025" size="150,55" />
+  <webResource name="zdjdcjsrglList.jsp" path="/pages/dagl/zdjdcjsrglList.jsp" location="0,0" size="0,0" />
+  <webResource name="zdjdcjsrglEdit.jsp" path="/pages/dagl/zdjdcjsrglEdit.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

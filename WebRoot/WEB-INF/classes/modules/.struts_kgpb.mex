@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_kgpb" location="0,0" size="0,0">
+    <action name="pbxxb_*" location="0,0" size="0,0">
+      <result name="pbList">
+        <resourceEdge source="pbList" routing="0" target="pbList.jsp" />
+      </result>
+    </action>
+    <action name="kcxxb_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="kcList.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="addKc.jsp" />
+      </result>
+    </action>
+    <action name="kgxxb_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="kgList.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="addKg.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/bfc/list.jsp" location="77,205" size="150,55" />
+  <webResource name="pbList.jsp" path="/pages/kgpb/pbList.jsp" location="0,0" size="0,0" />
+  <webResource name="kcList.jsp" path="/pages/kgpb/kcList.jsp" location="0,0" size="0,0" />
+  <webResource name="addKc.jsp" path="/pages/kgpb/addKc.jsp" location="0,0" size="0,0" />
+  <webResource name="kgList.jsp" path="/pages/kgpb/kgList.jsp" location="0,0" size="0,0" />
+  <webResource name="addKg.jsp" path="/pages/kgpb/addKg.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

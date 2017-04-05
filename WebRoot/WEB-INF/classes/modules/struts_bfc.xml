@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_bfc" extends="/ycszh" namespace="/bfc">
+		<action name="bfc_*" class="com.ycszh.ssh.action.bfc.BfcJbxxbAction" method="{1}">
+			<result name="list">/pages/bfc/list.jsp</result>
+		</action>
+		
+		<action name="bfcsp_*" class="com.ycszh.ssh.action.bfc.BfcTsspbAction" method="{1}">
+			<result name="splist">/pages/bfc/splist.jsp</result>
+			<result name="add">/pages/bfc/addSpInfo.jsp</result>
+			<result name="spSelList">/pages/bfc/spSellist.jsp</result>
+			<result name="bfcSpCount">/pages/bfc/bfcSpCount.jsp</result>
+			<result name="selBfcInfo">/pages/bfc/selBfcInfo.jsp</result>
+		</action>
+		
+		<action name="bfjg_*" class="com.ycszh.ssh.action.bfc.BfcJgskbAction" method="{1}">
+			<result name="bfcInfoList">/pages/bfc/bfcJgInfoList.jsp</result>
+			<result name="selBfcJgskbInfo">/pages/bfc/selBfcInfo2.jsp</result>
+		</action>
+	</package>
+</struts>

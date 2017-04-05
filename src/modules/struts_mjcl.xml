@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_mjcl" extends="/ycszh" namespace="/mjcl">
+		<action name="mjcl_*" class="com.ycszh.ssh.action.mjcl.MjclAction" method="{1}">
+			<result name="list">/pages/mjcl/mjclList.jsp</result>
+			<result name="listTj">/pages/mjcl/mjclTj.jsp</result>
+			<result name="listsg">/pages/mjcl/xgslList.jsp</result>
+			<result name="yjgzlist">/pages/mjcl/yjgzList.jsp</result>
+		</action>
+		<!-- 指标信息查询  -->
+		<action name="zb_*" class="com.ycszh.ssh.action.mjcl.ZbInfoAction" method="{1}">
+			<result name="zbInfo">/pages/mjcl/zbInfo.jsp</result>
+		</action>
+	</package>
+</struts>

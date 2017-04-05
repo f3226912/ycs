@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_veh" location="0,0" size="0,0">
+    <action name="veh_*" location="0,0" size="0,0">
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="wpz_jdcsledit.jsp" />
+      </result>
+      <result name="lshselect">
+        <resourceEdge source="lshselect" routing="0" target="jdcsledit.jsp" />
+      </result>
+      <result name="spcxlist">
+        <resourceEdge source="spcxlist" routing="0" target="spcxlist.jsp" />
+      </result>
+      <result name="view">
+        <resourceEdge source="view" routing="0" target="jdcsledit.jsp" />
+      </result>
+      <result name="edit_zchf">
+        <resourceEdge source="edit_zchf" routing="0" target="jdcsl_zchf.jsp" />
+      </result>
+      <result name="edit_tbyw">
+        <resourceEdge source="edit_tbyw" routing="0" target="jdcsledit.jsp" />
+      </result>
+      <result name="zbxxList">
+        <resourceEdge source="zbxxList" routing="0" target="jdccjlist.jsp" />
+      </result>
+    </action>
+    <action name="vehSpxx_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="splist.jsp" />
+      </result>
+      <result name="edit">
+        <resourceEdge source="edit" routing="0" target="spedit.jsp" />
+      </result>
+      <result name="posplist">
+        <resourceEdge source="posplist" routing="0" target="posplist.jsp" />
+      </result>
+      <result name="pospedit">
+        <resourceEdge source="pospedit" routing="0" target="pospedit.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="veh_ajax" location="0,0" size="0,0">
+    <action name="getVehicleByLsh" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="vehAjax_*" location="0,0" size="0,0">
+      <result name="mustlsh" />
+      <result name="vehtempinbylsh" />
+      <result name="temporaryLicenseByLsh" />
+    </action>
+  </package>
+  <package name="/delVehSpxx" location="0,0" size="0,0">
+    <action name="vehSpxx_*" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="jdcsledit.jsp" path="/pages/veh/jdcsledit.jsp" location="0,0" size="0,0" />
+  <webResource name="spcxlist.jsp" path="/pages/veh/spcxlist.jsp" location="0,0" size="0,0" />
+  <webResource name="splist.jsp" path="/pages/veh/splist.jsp" location="0,0" size="0,0" />
+  <webResource name="spedit.jsp" path="/pages/veh/spedit.jsp" location="0,0" size="0,0" />
+  <webResource name="posplist.jsp" path="/pages/veh/posplist.jsp" location="0,0" size="0,0" />
+  <webResource name="pospedit.jsp" path="/pages/veh/pospedit.jsp" location="0,0" size="0,0" />
+  <webResource name="jdcsl_zchf.jsp" path="/pages/veh/jdcsl_zchf.jsp" location="0,0" size="0,0" />
+  <webResource name="jdccjlist.jsp" path="/pages/veh/jdccjlist.jsp" location="0,0" size="0,0" />
+  <webResource name="wpz_jdcsledit.jsp" path="/pages/jdcsl_wzp/wpz_jdcsledit.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

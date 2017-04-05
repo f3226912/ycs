@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.ycszh.ssh.hbm.gjgggl.BusGgjgclsbPhoto" table="BUS_GGJGCLSB_PHOTO" schema="VEHOFFICE">
+        <id name="lsh" type="java.lang.String">
+            <column name="LSH" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="LPic" type="java.sql.Blob">
+            <column name="L_PIC" />
+        </property>
+        <property name="RPic" type="java.sql.Blob">
+            <column name="R_PIC" />
+        </property>
+        <property name="synFlag" type="java.lang.String">
+            <column name="SYN_FLAG" length="10" />
+        </property>
+        <property name="tranDate" type="java.util.Date">
+            <column name="TRAN_DATE" length="7" />
+        </property>
+        <property name="tranFlag" type="java.lang.String">
+            <column name="TRAN_FLAG" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="/ycszh" extends="struts-default" namespace="/">
+		<global-results>
+			<!-- 未授权操作重定向页面 -->
+			<result name="warn" type="redirect">/pages/errorpage/warning.jsp</result>
+			<!-- 异常转发页面 -->
+			<result name="error">/pages/errorpage/exception.jsp</result>
+			<result name="Exception">/pages/errorpage/nodata.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<!-- 异常捕获对象 -->
+			<exception-mapping result="error" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+	
+	<include file="modules/struts_drv.xml" />
+	<include file="modules/struts_yanche.xml" />
+	<include file="modules/struts_yujing.xml"></include>
+	<include file="modules/struts_guoshui.xml" />
+	<include file="modules/struts_bfc.xml" />
+	<include file="modules/struts_veh.xml" />
+	<include file="modules/struts_ydwt.xml"/>
+	<include file="modules/struts_dydj.xml"/>
+	<include file="modules/struts_blacklist.xml"/>
+	<include file="modules/struts_jdcbg.xml"/>
+	<include file="modules/struts_cljstj.xml"/>
+	<include file="modules/struts_sjk.xml"/>
+	<include file="modules/struts_queryRelate.xml"/>
+	<include file="modules/struts_mjcl.xml"/>
+	<include file="modules/struts_ddc.xml"/>
+	<include file="modules/struts_xyc.xml"/>
+	<include file="modules/struts_gjgggl.xml"/>
+	<include file="modules/struts_pdaycimeigl.xml"/>
+	<include file="modules/struts_kgpb.xml"/>
+	<include file="modules/struts_jsrdzda.xml"/>
+	<include file="modules/struts_sfrz.xml"/>
+	<include file="modules/struts_ezxfw.xml"/>
+	<include file="modules/struts_dagl.xml"/>
+	<include file="modules/struts_jyzwcj.xml"/>
+	<include file="modules/struts_jszlcx.xml"/>
+	<include file="modules/struts_jdcjsrxpk.xml"/>
+	<include file="modules/struts_yytj_message.xml"/>
+	<include file="modules/struts_veh_wpz.xml"/>
+</struts>    

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ycszh.ssh.hbm.drv.EsDrvFlow" table="ES_DRV_FLOW">
+        <id name="lsh" type="java.lang.String">
+        	<column name="lsh" length="13"></column>
+        </id>
+        <property name="sfzmhm" type="java.lang.String">
+            <column name="SFZMHM" length="18" />
+        </property>
+        <property name="dabh" type="java.lang.String">
+            <column name="DABH" length="12" />
+        </property>
+        <property name="xm" type="java.lang.String">
+            <column name="XM" length="30" />
+        </property>
+        <property name="ywlx" type="java.lang.String">
+            <column name="YWLX" length="1" />
+        </property>
+        <property name="ywyy" type="java.lang.String">
+            <column name="YWYY" length="8" />
+        </property>
+        <property name="kssj" type="java.util.Date">
+            <column name="KSSJ" length="7" />
+        </property>
+        <property name="jssj" type="java.util.Date">
+            <column name="JSSJ" length="7" />
+        </property>
+        <property name="ywgw" type="java.lang.String">
+            <column name="YWGW" length="8" />
+        </property>
+        <property name="kskm" type="java.lang.String">
+            <column name="KSKM" length="6" />
+        </property>
+        <property name="xygw" type="java.lang.String">
+            <column name="XYGW" length="1" />
+        </property>
+        <property name="glbm" type="java.lang.String">
+            <column name="GLBM" length="12" />
+        </property>
+        <property name="ffbz" type="java.lang.String">
+            <column name="FFBZ" length="1" />
+        </property>
+        <property name="rkbz" type="java.lang.String">
+            <column name="RKBZ" length="1" />
+        </property>
+        <property name="hdbz" type="java.lang.String">
+            <column name="HDBZ" length="1" />
+        </property>
+        <property name="xgzl" type="java.lang.String">
+            <column name="XGZL" length="15" />
+        </property>
+        <property name="zjcx" type="java.lang.String">
+            <column name="ZJCX" length="15" />
+        </property>
+    </class>
+</hibernate-mapping>

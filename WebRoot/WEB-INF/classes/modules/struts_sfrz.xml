@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_sfrz" extends="/ycszh" namespace="/sfrz">
+		<action name="sfrz_*" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="{1}">
+			<result name="list">/pages/sfrz/list.jsp</result>
+			<result name="insert">/pages/sfrz/edit.jsp</result>
+			<result name="view">/pages/sfrz/edit.jsp</result>
+			<result name="dbyview">/pages/sfrz/dbyedit.jsp</result>
+			<result name="print">/pages/sfrz/print.jsp</result>
+			<result name="dbylist">/pages/sfrz/dbylist.jsp</result>
+		</action>
+		
+		<action name="download" class="com.ycszh.ssh.action.sfrz.SfrzAction">
+			<param name="inputPath">/files/install4.rar</param>
+			<result name="success" type="stream">
+				<param name="contentType">application/rar</param>
+				<param name="inputName">rarFile</param>
+				<param name="contentDisposition">filename="install4.rar"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		<action name="czscload" class="com.ycszh.ssh.action.sfrz.SfrzAction">
+			<param name="inputPath">/files/czsc_V2.3.docx</param>
+			<result name="success" type="stream">
+				<param name="contentType">application/docx</param>
+				<param name="inputName">rarFile</param>
+				<param name="contentDisposition">filename="czsc_V2.3.docx"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+	</package>
+	<package name="sfrz_ajax" extends="json-default" namespace="/sfrz_ajax">
+		<action name="getSfrzCjxxbInfo" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getSfrzCjxxbInfo">
+			<result type="json" name="success">
+				<param name="root">sc</param>
+			</result>
+		</action>
+		<action name="getVehList" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getVehList">
+			<result type="json" name="success">
+				<param name="root">vehlist</param>
+			</result>
+		</action>
+		<action name="getDrvList" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getDrvList">
+			<result type="json" name="success">
+				<param name="root">drvlist</param>
+			</result>
+		</action>
+		<action name="getXphzList" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getXphzList">
+			<result type="json" name="success">
+				<param name="root">xphzlist</param>
+			</result>
+		</action>
+		<action name="getUserInfo" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getUserInfo">
+			<result type="json" name="success">
+				<param name="root">likeList</param>
+			</result>
+		</action>
+		<action name="getdbrList" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getdbrList">
+			<result type="json" name="success">
+				<param name="root">cdbrlist</param>
+			</result>
+		</action>
+		<action name="getsfshList" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getsfshList">
+		
+		</action>
+		<action name="getSfrzA" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getSfrzA"/>
+		<action name="getRscDby" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getRscDby"/>
+		<action name="getRscDbyZjxxb" class="com.ycszh.ssh.action.sfrz.SfrzAction" method="getRscDbyZjxxb"/>
+	</package>
+</struts>

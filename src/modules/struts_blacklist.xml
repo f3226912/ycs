@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_blacklist" extends="/ycszh" namespace="/blacklist">
+		<action name="black_*" class="com.ycszh.ssh.action.blacklist.BlackListManageAction" method="{1}">
+			<result name="blackYhList">/pages/blacklist/user/blackYHList.jsp</result>
+			<result name="initAdd">/pages/blacklist/user/addBlackYh.jsp</result>
+			<result name="initEdit">/pages/blacklist/user/editBlackYh.jsp</result>
+			<result name="dictList">/pages/blacklist/dictSet/dictList.jsp</result>
+			<result name="initDict">/pages/blacklist/dictSet/addBlackDict.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ycszh.ssh.hbm.veh.DbjgFzxp" table="DBJG_FZXPB" schema="VEHOFFICE">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="sequence">
+            	<param name="sequence">SEQ_FZXP</param>
+            </generator>
+        </id>
+        <property name="jdcxxcjid" type="java.lang.String">
+            <column name="JDCXXCJID" length="40" not-null="true" />
+        </property>
+        <property name="ywlxid" type="java.lang.String">
+            <column name="YWLXID" length="10" not-null="true" />
+        </property>
+        <property name="ywlxms" type="java.lang.String">
+            <column name="YWLXMS" length="30" not-null="true" />
+        </property>
+        <property name="twm" type="java.lang.String">
+            <column name="TWM" length="50" not-null="true" />
+        </property>
+        <property name="czr" type="java.lang.String">
+            <column name="CZR" length="20" />
+        </property>
+        <property name="czrxm" type="java.lang.String">
+            <column name="CZRXM" length="30" />
+        </property>
+        <property name="czbm" type="java.lang.String">
+            <column name="CZBM" length="30" />
+        </property>
+        <property name="czrq" type="java.util.Date">
+            <column name="CZRQ" length="7" />
+        </property>
+        <property name="czip" type="java.lang.String">
+            <column name="CZIP" length="20" />
+        </property>
+        <property name="czmac" type="java.lang.String">
+            <column name="CZMAC" length="30" />
+        </property>
+        <property name="vehOrDrv" type="java.lang.String">
+            <column name="VEH_DRV" length="10" />
+        </property>
+        <property name="pzid" type="java.lang.String">
+            <column name="PZID" length="30" />
+        </property>
+        <property name="pztitle" type="java.lang.String">
+            <column name="PZTITLE" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

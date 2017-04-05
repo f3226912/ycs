@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_blacklist" location="50,50" size="170,92">
+    <action name="black_*" location="10,20" size="150,62">
+      <result name="blackYhList">
+        <resourceEdge source="blackYhList" routing="0" target="blackYHList.jsp" />
+      </result>
+      <result name="initAdd">
+        <resourceEdge source="initAdd" routing="0" target="addBlackYh.jsp" />
+      </result>
+      <result name="initEdit">
+        <resourceEdge source="initEdit" routing="0" target="editBlackYh.jsp" />
+      </result>
+      <result name="dictList">
+        <resourceEdge source="dictList" routing="0" target="dictList.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="blackYHList.jsp" path="/pages/blacklist/user/blackYHList.jsp" location="364,67" size="150,55" />
+  <webResource name="addBlackYh.jsp" path="/pages/blacklist/user/addBlackYh.jsp" location="4,217" size="150,55" />
+  <webResource name="editBlackYh.jsp" path="/pages/blacklist/user/editBlackYh.jsp" location="0,0" size="0,0" />
+  <webResource name="dictList.jsp" path="/pages/blacklist/dictSet/dictList.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

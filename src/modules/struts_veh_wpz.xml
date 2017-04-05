@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_wpz" extends="/ycszh" namespace="/wpz">
+		<action name="wpz_*" class="com.ycszh.ssh.action.veh.SlgVehWpzAction" method="{1}">
+			<result name="initJdc_wpz">/pages/veh_wpz/wpz_jdcsledit.jsp</result>
+			<result name="spcxlist">/pages/veh_wpz/spcxlist.jsp</result>
+			<result name="slxq">/pages/veh_wpz/wpz_jdcslshow.jsp</result>
+		</action>	
+	</package>	
+	
+	<package name="wpz_ajax" extends="json-default" namespace="/wpz_ajax">
+		<action name="wpzajax_*" class="com.ycszh.ssh.action.veh.SlgVehWpzAction" method="{1}">
+			<result type="json" name="jsonBean">
+				<param name="root">esvehicle</param>
+			</result>
+			<result type="json" name="success">
+				<param name="root">slgSjzds</param>
+			</result>
+		</action>
+		<!--<action name="ywlxajax" class="com.ycszh.ssh.action.drv.SlgDrvAction" method="getYwlxYwyy">
+			<result type="json" name="success">
+				<param name="root">slgSjzds</param>
+			</result>
+		</action>
+	--></package>
+</struts>

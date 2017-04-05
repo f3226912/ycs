@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="/pdaimei" location="10,165" size="280,210">
+    <action name="imei_*" location="65,71" size="150,83">
+      <result name="tPdaYcimei">
+        <resourceEdge source="tPdaYcimei" routing="0" target="pdaIMEIgl.jsp" />
+      </result>
+      <result name="tPdaYcimeiChange">
+        <resourceEdge source="tPdaYcimeiChange" routing="0" target="pdaIMEIgl_detail.jsp" />
+      </result>
+      <result name="tPdaYcimeiAdd">
+        <resourceEdge source="tPdaYcimeiAdd" routing="0" target="pdaIMEIgl_add.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="pdaIMEIgl.jsp" path="/pages/pdaycimeigl/pdaIMEIgl.jsp" location="38,430" size="150,55" />
+  <webResource name="pdaIMEIgl_detail.jsp" path="/pages/pdaycimeigl/pdaIMEIgl_detail.jsp" location="17,10" size="150,55" />
+  <webResource name="pdaIMEIgl_add.jsp" path="/pages/pdaycimeigl/pdaIMEIgl_add.jsp" location="341,220" size="150,55" />
+</Struts2Diagram>
+

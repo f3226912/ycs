@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_xyc" location="0,0" size="0,0">
+    <action name="xyccode_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="listcode.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="editcode.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="editcode.jsp" />
+      </result>
+    </action>
+    <action name="xycveh_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="listveh.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="editveh.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="editveh.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/ycsXycCode/list.jsp" location="150,430" size="150,55" />
+  <webResource name="edit.jsp" path="/pages/ycsXycCode/edit.jsp" location="10,10" size="150,55" />
+  <webResource name="listcode.jsp" path="/pages/xyc/listcode.jsp" location="0,0" size="0,0" />
+  <webResource name="editcode.jsp" path="/pages/xyc/editcode.jsp" location="0,0" size="0,0" />
+  <webResource name="listveh.jsp" path="/pages/xyc/listveh.jsp" location="0,0" size="0,0" />
+  <webResource name="editveh.jsp" path="/pages/xyc/editveh.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

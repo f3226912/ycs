@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="queryRelateThing" extends="/ycszh" namespace="/qrelate">
+		<action name="qrelate_*" class="com.ycszh.ssh.action.queryrelate.QueryRelatedAction" method="{1}">
+			<result name="qrelate1">/pages/queryrelated/searchResult1.jsp</result>
+			<result name="qrelate2">/pages/queryrelated/searchResult2.jsp</result>
+			<result name="qrelate3">/pages/queryrelated/searchResult3.jsp</result>
+			<result name="qrelate4">/pages/queryrelated/searchResult4.jsp</result>
+			<result name="qrelate5">/pages/queryrelated/searchResult5.jsp</result>
+			<result name="qrelate6">/pages/queryrelated/searchResult6.jsp</result>
+			<result name="detailResult1">/pages/queryrelated/detailResult1.jsp</result>
+		</action>
+	</package>
+</struts>

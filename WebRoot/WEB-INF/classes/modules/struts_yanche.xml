@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_yanche" extends="/ycszh" namespace="/yanche">
+		<action name="chbase_*" class="com.ycszh.ssh.action.yanche.PdasmycChbaseAction" method="{1}">
+			<result name="list">/pages/yanche/chbaselist.jsp</result>
+			<result name="insert">/pages/yanche/chbaseedit.jsp</result>
+			<result name="update">/pages/yanche/chbaseedit.jsp</result>
+			<result name="view">/pages/yanche/chbaseedit.jsp</result>
+		</action>
+		<action name="chdlr_*" class="com.ycszh.ssh.action.yanche.PdasmycChdlrAction" method="{1}">
+			<result name="list">/pages/yanche/chdlrlist.jsp</result>
+			<result name="insert">/pages/yanche/chdlredit.jsp</result>
+			<result name="update">/pages/yanche/chdlredit.jsp</result>
+			<result name="view">/pages/yanche/chdlredit.jsp</result>
+		</action>
+		<action name="vehpcb_*" class="com.ycszh.ssh.action.yanche.PdasmycVehPcbAction" method="{1}">
+			<result name="list">/pages/yanche/vehpcblist.jsp</result>
+			<result name="list2">/pages/yanche/vehpcblist2.jsp</result>
+			<result name="list3">/pages/yanche/ycwpzsp.jsp</result>
+			<result name="list4">/pages/yanche/ycwpzsp2.jsp</result>
+			<result name="insert">/pages/yanche/vehpcbview.jsp</result>
+			<result name="update">/pages/yanche/vehpcbview.jsp</result>
+			<result name="view">/pages/yanche/vehpcbview.jsp</result>
+			<result name="viewlist">/pages/yanche/pcbviewlist.jsp</result>
+			<result name="view2">/pages/yanche/pcbview.jsp</result>
+			<result name="ycrwlist">/pages/yanche/ycrwlist.jsp</result>
+			<result name="ycrwlist2">/pages/yanche/ycrwlist2.jsp</result>
+			<result name="ycrwlist3">/pages/yanche/ycrwlist3.jsp</result>
+			<result name="ycrwlist5">/pages/yanche/ycrwprint.jsp</result>
+			<result name="ycjgxg">/pages/yanche/ycjgxg.jsp</result>
+		</action>
+		<action name="lsgl_*" class="com.ycszh.ssh.action.yanche.YwlsglVehFlowAction" method="{1}">
+			<result name="list">/pages/yanche/lsgl_lslist.jsp</result>
+			<result name="listt">/pages/yanche/lsgl_lslistt.jsp</result>
+			<result name="lsedit">/pages/yanche/lsgl_lsedit.jsp</result>
+			<result name="lseditt">/pages/yanche/lsgl_lseditt.jsp</result>
+			<result name="yjlist">/pages/yanche/lsgl_yjlist.jsp</result>
+		</action>
+		<!-- 验车字典管理 -->
+		<action name="yczd_*" class="com.ycszh.ssh.action.yanche.YczdglAction" method="{1}">
+			<result name="initTree">/pages/yanche/yczdglList.jsp</result>
+			<result name="cyyjOrpzgg">/pages/yanche/ycxminfoList.jsp</result>
+			<result name="editInit">/pages/yanche/edit_cllxOrsyxz.jsp</result>
+			<result name="edit_cyOrpz">/pages/yanche/edit_cyxorpz.jsp</result>
+			<result name="edit_qt">/pages/yanche/edit_qt.jsp</result>
+			<result name="pzsubmit">/pages/yanche/edit_cyxorpz.jsp</result>
+			<result name="ycyhlxxz">/pages/yanche/ycyhlxxzList.jsp</result>
+			<result name="initEditYcyh">/pages/yanche/edit_cyyhlxxz.jsp</result>
+			<result name="syxzOrcllx">/pages/yanche/yc_syxz_cllx.jsp</result>
+			<result name="cyxm">/pages/yanche/yc_cyxmgl.jsp</result>
+			<result name="pzgg">/pages/yanche/yc_pzgggl.jsp</result>
+			<result name="cyjl">/pages/yanche/cyjllist.jsp</result>
+			<result name="cybd_qt">/pages/yanche/a1_jdccyb.jsp</result>
+			<result name="cybd_xc">/pages/yanche/a2_xccyb.jsp</result>
+			<result name="print_qt">/pages/yanche/a1_jdccyb_print.jsp</result>
+			<result name="print_xc">/pages/yanche/a2_xccyb_print.jsp</result>
+			<result name="ycGpslist">/pages/yanche/ycGpslist.jsp</result>
+			<result name="initEditGsp">/pages/yanche/ycGps_edit.jsp</result>
+			<result name="fjtjgl">/pages/yanche/ycfjtjgl.jsp</result>
+			<!-- 电子签名 -->
+			<result name="dzqmlist">/pages/dzqm/dzqmList.jsp</result>
+			<result name="dzqm">/pages/dzqm/dzqmgl.jsp</result>
+			<result name="showdzqm">/pages/dzqm/dzqmShow.jsp</result>
+		</action>
+	</package>
+</struts>

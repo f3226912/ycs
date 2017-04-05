@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_ydwt" extends="/ycszh" namespace="/ydwt">
+		<action name="ydwt_*" class="com.ycszh.ssh.action.ydwt.YdwtManageAction" method="{1}">
+			<result name="busList">/pages/ydwt/businessManage/businessList.jsp</result>
+			<result name="quitStat">/pages/ydwt/statistics/declareAndQuit.jsp</result>
+			<result name="postQuit">/pages/ydwt/statistics/posQuit.jsp</result>
+			<result name="userList">/pages/ydwt/user/userList.jsp</result>
+			<result name="initAdd">/pages/ydwt/user/addUser.jsp</result>
+			<result name="busDetail">/pages/ydwt/businessManage/businessDetail.jsp</result>
+			<result name="initWarn">/pages/ydwt/warn/warnYdwt.jsp</result>
+		</action>
+	</package>
+</struts>

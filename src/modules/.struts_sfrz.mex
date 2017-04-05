@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_sfrz" location="240,165" size="280,350">
+    <action name="sfrz_*" location="65,61" size="150,104">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="list.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="edit.jsp" />
+      </result>
+      <result name="view">
+        <resourceEdge source="view" routing="0" target="edit.jsp" />
+      </result>
+      <result name="print">
+        <resourceEdge source="print" routing="0" target="print.jsp" />
+      </result>
+    </action>
+    <action name="download" location="65,267" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="czscload" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="sfrz_ajax" location="10,619" size="460,351">
+    <action name="getSfrzCjxxbInfo" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="getVehList" location="260,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="getDrvList" location="15,163" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="getXphzList" location="260,163" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="getUserInfo" location="15,303" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="getdbrList" location="260,303" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="getsfshList" location="0,0" size="0,0" />
+    <action name="getSfrzA" location="0,0" size="0,0" />
+    <action name="getRscDby" location="0,0" size="0,0" />
+    <action name="getRscDbyZjxxb" location="0,0" size="0,0" />
+  </package>
+  <webResource name="list.jsp" path="/pages/sfrz/list.jsp" location="584,220" size="150,55" />
+  <webResource name="edit.jsp" path="/pages/sfrz/edit.jsp" location="24,325" size="150,55" />
+  <webResource name="print.jsp" path="/pages/sfrz/print.jsp" location="301,10" size="150,55" />
+</Struts2Diagram>
+

@@ -1,0 +1,45 @@
+.gzoomwrap {
+	FLOAT: left; MARGIN: 0px 10px 0px 0px
+}
+.minizoompan {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: relative
+}
+.minizoompan SPAN.loader {
+	PADDING-RIGHT: 3px; DISPLAY: none; PADDING-LEFT: 3px; Z-INDEX: 1; BACKGROUND: #fff; LEFT: 0px; PADDING-BOTTOM: 3px; FONT: 9px Arial, Verdana; COLOR: #000; PADDING-TOP: 3px; POSITION: absolute; TOP: 0px
+}
+.minizoompan .zoomIcon {
+	DISPLAY: none; Z-INDEX: 1; LEFT: 0px; CURSOR: pointer; POSITION: absolute; TOP: 0px
+}
+.gzoombutton {
+	FLOAT: left; CURSOR: pointer
+}
+.gzoomSlider {
+	FLOAT: left; MARGIN: 3px 5px 0px
+}
+#gzoomoverlay {
+	Z-INDEX: 90; LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 0px; HEIGHT: 500px
+}
+#gzoomlbox {
+	Z-INDEX: 100; LEFT: 0px; WIDTH: 100%; LINE-HEIGHT: 0; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+#gzoomlbox A IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#imagebox {
+	MARGIN: 0px auto; WIDTH: 250px; POSITION: relative; HEIGHT: 250px; BACKGROUND-COLOR: #fff
+}
+#gzoom-cont-img {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#lboximgdatacontainer {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: 0px auto; FONT: 10px/1.4em Verdana, Helvetica, sans-serif; OVERFLOW: auto; WIDTH: 100%; COLOR: #666; PADDING-TOP: 0px; BACKGROUND-COLOR: #fff
+}
+#gzoomloading {
+	LEFT: 0%; WIDTH: 100%; LINE-HEIGHT: 0; POSITION: absolute; TOP: 40%; HEIGHT: 25%; TEXT-ALIGN: center
+}
+#lboximgdatacontainer #gzoomlbox-image-details {
+	FLOAT: left; WIDTH: 70%; TEXT-ALIGN: left
+}
+#gzoom-image-caption {
+	FONT-WEIGHT: bold
+}

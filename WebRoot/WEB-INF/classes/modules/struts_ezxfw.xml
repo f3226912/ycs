@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_ezxfw" extends="/ycszh" namespace="/ezxfw">
+		<action name="ezxfw_*" class="com.ycszh.ssh.action.ezxfw.EzxfwAction"
+			method="{1}">
+			<result name="drvchanlist">/pages/ezxfw/drvchanlist.jsp</result>
+			<result name="drvlscxlist">/pages/ezxfw/drvLscxlist.jsp</result>
+			<result name="jdclscxlist">/pages/ezxfw/jdcLscxlist.jsp</result>
+			<result name="drvchanview">/pages/ezxfw/drvchanview.jsp</result>
+			<result name="jdcchanlist">/pages/ezxfw/jdcchanlist.jsp</result>
+			<result name="jdcchanview">/pages/ezxfw/jdcchanview.jsp</result>
+			<result name="chanlist">/pages/ezxfw/chanlist.jsp</result>
+			<result name="chanview">/pages/ezxfw/chanview.jsp</result>
+			<result name="drvchecklist">/pages/ezxfw/drvchecklist.jsp</result>
+			<result name="jdcchecklist">/pages/ezxfw/jdchecklist.jsp</result>
+			<result name="drvcheckview">/pages/ezxfw/drvcheckview.jsp</result>
+			<result name="jdccheckview">/pages/ezxfw/jdccheckview.jsp</result>
+			<result name="drvgzllist">/pages/ezxfw/drvgzllist.jsp</result>
+			<result name="drvgzlview">/pages/ezxfw/drvgzlview.jsp</result>
+			<result name="jdcgzllist">/pages/ezxfw/jdcgzllist.jsp</result>
+			<result name="jdcgzlview">/pages/ezxfw/jdcgzlview.jsp</result>
+			<result name="drvshowPrint">/pages/ezxfw/drvprintShow.jsp</result>
+			<result name="jdcshowPrint">/pages/ezxfw/jdcprintShow.jsp</result>
+			<result name="ezXxdPrintlist">/pages/ezxfw/ezXxdPrintlist.jsp</result>
+			<result name="ezXxdPrintview">/pages/ezxfw/ezXxdPrintview.jsp</result>
+			
+		</action>
+	</package>
+	<package name="ezxfw_ajax" extends="json-default" namespace="/ezxfw_ajax">
+		<action name="getChanList" class="com.ycszh.ssh.action.ezxfw.EzxfwAction"
+			method="getChanList">
+			<result type="json" name="success">
+				<param name="root">chanlist</param>
+			</result>
+		</action>
+	</package>
+</struts>

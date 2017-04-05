@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_yanche" location="495,165" size="490,2975">
+    <action name="chbase_*" location="275,61" size="150,104">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="chbaselist.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="chbaseedit.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="chbaseedit.jsp" />
+      </result>
+      <result name="view">
+        <resourceEdge source="view" routing="0" target="chbaseedit.jsp" />
+      </result>
+    </action>
+    <action name="chdlr_*" location="275,481" size="150,104">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="chdlrlist.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="chdlredit.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="chdlredit.jsp" />
+      </result>
+      <result name="view">
+        <resourceEdge source="view" routing="0" target="chdlredit.jsp" />
+      </result>
+    </action>
+    <action name="vehpcb_*" location="275,691" size="150,314">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="vehpcblist.jsp" />
+      </result>
+      <result name="list2">
+        <resourceEdge source="list2" routing="0" target="vehpcblist2.jsp" />
+      </result>
+      <result name="list3">
+        <resourceEdge source="list3" routing="0" target="ycwpzsp.jsp" />
+      </result>
+      <result name="list4">
+        <resourceEdge source="list4" routing="0" target="ycwpzsp2.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="vehpcbview.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="vehpcbview.jsp" />
+      </result>
+      <result name="view">
+        <resourceEdge source="view" routing="0" target="vehpcbview.jsp" />
+      </result>
+      <result name="viewlist">
+        <resourceEdge source="viewlist" routing="0" target="pcbviewlist.jsp" />
+      </result>
+      <result name="view2">
+        <resourceEdge source="view2" routing="0" target="pcbview.jsp" />
+      </result>
+      <result name="ycrwlist">
+        <resourceEdge source="ycrwlist" routing="0" target="ycrwlist.jsp" />
+      </result>
+      <result name="ycrwlist2">
+        <resourceEdge source="ycrwlist2" routing="0" target="ycrwlist2.jsp" />
+      </result>
+      <result name="ycrwlist3">
+        <resourceEdge source="ycrwlist3" routing="0" target="ycrwlist3.jsp" />
+      </result>
+      <result name="ycrwlist5">
+        <resourceEdge source="ycrwlist5" routing="0" target="ycrwprint.jsp" />
+      </result>
+      <result name="ycjgxg">
+        <resourceEdge source="ycjgxg" routing="0" target="ycjgxg.jsp" />
+      </result>
+    </action>
+    <action name="lsgl_*" location="65,1296" size="150,83">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="lsgl_lslist.jsp" />
+      </result>
+      <result name="listt">
+        <resourceEdge source="listt" routing="0" target="lsgl_lslistt.jsp" />
+      </result>
+      <result name="lsedit">
+        <resourceEdge source="lsedit" routing="0" target="lsgl_lsedit.jsp" />
+      </result>
+      <result name="lseditt">
+        <resourceEdge source="lseditt" routing="0" target="lsgl_lseditt.jsp" />
+      </result>
+      <result name="yjlist">
+        <resourceEdge source="yjlist" routing="0" target="lsgl_yjlist.jsp" />
+      </result>
+    </action>
+    <action name="yczd_*" location="0,0" size="0,0">
+      <result name="initTree">
+        <resourceEdge source="initTree" routing="0" target="yczdglList.jsp" />
+      </result>
+      <result name="cyyjOrpzgg">
+        <resourceEdge source="cyyjOrpzgg" routing="0" target="ycxminfoList.jsp" />
+      </result>
+      <result name="editInit">
+        <resourceEdge source="editInit" routing="0" target="edit_cllxOrsyxz.jsp" />
+      </result>
+      <result name="edit_cyOrpz">
+        <resourceEdge source="edit_cyOrpz" routing="0" target="edit_cyxorpz.jsp" />
+      </result>
+      <result name="edit_qt">
+        <resourceEdge source="edit_qt" routing="0" target="edit_qt.jsp" />
+      </result>
+      <result name="pzsubmit">
+        <resourceEdge source="pzsubmit" routing="0" target="edit_cyxorpz.jsp" />
+      </result>
+      <result name="ycyhlxxz">
+        <resourceEdge source="ycyhlxxz" routing="0" target="ycyhlxxzList.jsp" />
+      </result>
+      <result name="initEditYcyh">
+        <resourceEdge source="initEditYcyh" routing="0" target="edit_cyyhlxxz.jsp" />
+      </result>
+      <result name="syxzOrcllx">
+        <resourceEdge source="syxzOrcllx" routing="0" target="yc_syxz_cllx.jsp" />
+      </result>
+      <result name="cyxm">
+        <resourceEdge source="cyxm" routing="0" target="yc_cyxmgl.jsp" />
+      </result>
+      <result name="pzgg">
+        <resourceEdge source="pzgg" routing="0" target="yc_pzgggl.jsp" />
+      </result>
+      <result name="cyjl">
+        <resourceEdge source="cyjl" routing="0" target="cyjllist.jsp" />
+      </result>
+      <result name="cybd_qt">
+        <resourceEdge source="cybd_qt" routing="0" target="a1_jdccyb.jsp" />
+      </result>
+      <result name="cybd_xc">
+        <resourceEdge source="cybd_xc" routing="0" target="a2_xccyb.jsp" />
+      </result>
+      <result name="print_qt">
+        <resourceEdge source="print_qt" routing="0" target="a1_jdccyb_print.jsp" />
+      </result>
+      <result name="print_xc">
+        <resourceEdge source="print_xc" routing="0" target="a2_xccyb_print.jsp" />
+      </result>
+      <result name="ycGpslist">
+        <resourceEdge source="ycGpslist" routing="0" target="ycGpslist.jsp" />
+      </result>
+      <result name="initEditGsp">
+        <resourceEdge source="initEditGsp" routing="0" target="ycGps_edit.jsp" />
+      </result>
+      <result name="fjtjgl">
+        <resourceEdge source="fjtjgl" routing="0" target="ycfjtjgl.jsp" />
+      </result>
+      <result name="dzqmlist">
+        <resourceEdge source="dzqmlist" routing="0" target="dzqmList.jsp" />
+      </result>
+      <result name="dzqm">
+        <resourceEdge source="dzqm" routing="0" target="dzqmgl.jsp" />
+      </result>
+      <result name="showdzqm">
+        <resourceEdge source="showdzqm" routing="0" target="dzqmShow.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="chbaselist.jsp" path="/pages/yanche/chbaselist.jsp" location="745,10" size="150,55" />
+  <webResource name="chbaseedit.jsp" path="/pages/yanche/chbaseedit.jsp" location="255,325" size="150,55" />
+  <webResource name="chdlrlist.jsp" path="/pages/yanche/chdlrlist.jsp" location="1028,430" size="150,55" />
+  <webResource name="chdlredit.jsp" path="/pages/yanche/chdlredit.jsp" location="1273,535" size="150,55" />
+  <webResource name="vehpcblist.jsp" path="/pages/yanche/vehpcblist.jsp" location="255,1795" size="150,55" />
+  <webResource name="vehpcblist2.jsp" path="/pages/yanche/vehpcblist2.jsp" location="252,1970" size="150,55" />
+  <webResource name="ycwpzsp.jsp" path="/pages/yanche/ycwpzsp.jsp" location="264,2145" size="150,55" />
+  <webResource name="ycwpzsp2.jsp" path="/pages/yanche/ycwpzsp2.jsp" location="261,2320" size="150,55" />
+  <webResource name="vehpcbview.jsp" path="/pages/yanche/vehpcbview.jsp" location="10,1165" size="150,55" />
+  <webResource name="pcbviewlist.jsp" path="/pages/yanche/pcbviewlist.jsp" location="252,2530" size="150,55" />
+  <webResource name="pcbview.jsp" path="/pages/yanche/pcbview.jsp" location="264,2705" size="150,55" />
+  <webResource name="ycrwlist.jsp" path="/pages/yanche/ycrwlist.jsp" location="261,2880" size="150,55" />
+  <webResource name="ycrwlist2.jsp" path="/pages/yanche/ycrwlist2.jsp" location="258,3055" size="150,55" />
+  <webResource name="ycrwlist3.jsp" path="/pages/yanche/ycrwlist3.jsp" location="748,3195" size="150,55" />
+  <webResource name="ycrwprint.jsp" path="/pages/yanche/ycrwprint.jsp" location="1028,955" size="150,55" />
+  <webResource name="ycjgxg.jsp" path="/pages/yanche/ycjgxg.jsp" location="1037,745" size="150,55" />
+  <webResource name="lsgl_lslist.jsp" path="/pages/yanche/lsgl_lslist.jsp" location="252,1270" size="150,55" />
+  <webResource name="lsgl_lsedit.jsp" path="/pages/yanche/lsgl_lsedit.jsp" location="252,1445" size="150,55" />
+  <webResource name="lsgl_yjlist.jsp" path="/pages/yanche/lsgl_yjlist.jsp" location="252,1620" size="150,55" />
+  <webResource name="lsgl_lslistt.jsp" path="/pages/yanche/lsgl_lslistt.jsp" location="0,0" size="0,0" />
+  <webResource name="lsgl_lseditt.jsp" path="/pages/yanche/lsgl_lseditt.jsp" location="0,0" size="0,0" />
+  <webResource name="yczdglList.jsp" path="/pages/yanche/yczdglList.jsp" location="0,0" size="0,0" />
+  <webResource name="cyyjTreeList.jsp" path="/pages/yanche/cyyjTreeList.jsp" location="0,0" size="0,0" />
+  <webResource name="yccminfoList.jsp" path="/pages/yanche/yccminfoList.jsp" location="0,0" size="0,0" />
+  <webResource name="ycxminfoList.jsp" path="/pages/yanche/ycxminfoList.jsp" location="0,0" size="0,0" />
+  <webResource name="ycxmedit.jsp" path="/pages/yanche/ycxmedit.jsp" location="0,0" size="0,0" />
+  <webResource name="edit_cllxOrsyxz.jsp" path="/pages/yanche/edit_cllxOrsyxz.jsp" location="0,0" size="0,0" />
+  <webResource name="edit_cyx.jsp" path="/pages/yanche/edit_cyx.jsp" location="0,0" size="0,0" />
+  <webResource name="edit_qt.jsp" path="/pages/yanche/edit_qt.jsp" location="0,0" size="0,0" />
+  <webResource name="edit_cyxorpz.jsp" path="/pages/yanche/edit_cyxorpz.jsp" location="0,0" size="0,0" />
+  <webResource name="ycyhlxxzList.jsp" path="/pages/yanche/ycyhlxxzList.jsp" location="0,0" size="0,0" />
+  <webResource name="edit_cyyhlxxz.jsp" path="/pages/yanche/edit_cyyhlxxz.jsp" location="0,0" size="0,0" />
+  <webResource name="yc_syxz_cllx.jsp" path="/pages/yanche/yc_syxz_cllx.jsp" location="0,0" size="0,0" />
+  <webResource name="yc_cyxmgl.jsp" path="/pages/yanche/yc_cyxmgl.jsp" location="0,0" size="0,0" />
+  <webResource name="yc_pzgggl.jsp" path="/pages/yanche/yc_pzgggl.jsp" location="0,0" size="0,0" />
+  <webResource name="yc_cyjllist.jsp" path="/pages/yanche/yc_cyjllist.jsp" location="0,0" size="0,0" />
+  <webResource name="cyjllist.jsp" path="/pages/yanche/cyjllist.jsp" location="0,0" size="0,0" />
+  <webResource name="a1_jdccyb.jsp" path="/pages/yanche/a1_jdccyb.jsp" location="0,0" size="0,0" />
+  <webResource name="a2_jdccyb.jsp" path="/pages/yanche/a2_jdccyb.jsp" location="0,0" size="0,0" />
+  <webResource name="a1_jdccyb_print.jsp" path="/pages/yanche/a1_jdccyb_print.jsp" location="0,0" size="0,0" />
+  <webResource name="a2_xccyb_print.jsp" path="/pages/yanche/a2_xccyb_print.jsp" location="0,0" size="0,0" />
+  <webResource name="a2_xccyb.jsp" path="/pages/yanche/a2_xccyb.jsp" location="0,0" size="0,0" />
+  <webResource name="ycGpslist.jsp" path="/pages/yanche/ycGpslist.jsp" location="0,0" size="0,0" />
+  <webResource name="ycGps_edit.jsp" path="/pages/yanche/ycGps_edit.jsp" location="0,0" size="0,0" />
+  <webResource name="ycfjtjgl.jsp" path="/pages/yanche/ycfjtjgl.jsp" location="0,0" size="0,0" />
+  <webResource name="dzqmgl.jsp" path="/pages/yanche/dzqmgl.jsp" location="0,0" size="0,0" />
+  <webResource name="dzqmlist.jsp" path="/pages/yanche/dzqmlist.jsp" location="0,0" size="0,0" />
+  <webResource name="dzqmShow.jsp" path="/pages/yanche/dzqmShow.jsp" location="0,0" size="0,0" />
+  <webResource name="dzqmList.jsp" path="/pages/dzqm/dzqmList.jsp" location="0,0" size="0,0" />
+  <webResource name="dzqmgl.jsp" path="/pages/dzqm/dzqmgl.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

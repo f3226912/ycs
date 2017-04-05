@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="/guoshui" extends="/ycszh" namespace="/guoshui">
+		<action name="guoshui_*" class="com.ycszh.ssh.action.guoshui.GuoshuiLianwAction" method="{1}">
+			<result name="list">/pages/guoshui/guoshuilist.jsp</result>
+		</action>
+	</package>
+	
+	<package name="guoshui_ajax" extends="json-default" namespace="/guoshuiajax">
+		<action name="guoshui_*" class="com.ycszh.ssh.action.guoshui.GuoshuiLianwAction" method="{1}">
+			<result type="json" name="count">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>

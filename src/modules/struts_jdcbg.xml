@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_jdcbg" extends="/ycszh" namespace="/jdcbg">
+		<action name="jdcbg_*" class="com.ycszh.ssh.action.jdcbg.ContactBgAction" method="{1}">
+			<result name="list">/pages/jdcbg/jdcbgList.jsp</result>
+			<result name="jdcbgsh">/pages/jdcbg/jdcbgsh.jsp</result>
+			<result name="querylist">/pages/jdcbg/jdcbgquery.jsp</result>
+			<result name="jdcbgck">/pages/jdcbg/jdcbgck.jsp</result>
+		</action>
+	</package>
+</struts>

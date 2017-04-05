@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="jzzcx" extends="/ycszh" namespace="/jzzcx">
+		<action name="jzzcx_*" class="com.ycszh.ssh.action.jszlcx.JzzcxAction" method="{1}">
+			<!-- 根据身份证号码和姓名查询居住证信息 -->
+			<result name="jzzxxList">/pages/jszlcx/jzzcx.jsp</result>
+	    </action>
+	</package>
+</struts>

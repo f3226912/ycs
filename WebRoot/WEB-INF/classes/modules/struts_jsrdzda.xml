@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_jsrdzda" extends="/ycszh" namespace="/jsrdzda">
+		<action name="jsrdzda_*" class="com.ycszh.ssh.action.jsrdzda.JsrdzdaAction" method="{1}">
+		    <!-- 驾校功能 -->
+			<result name="cjlist">/pages/jsrdzda/jx/jarCjlist.jsp</result>
+			<result name="jsrCj">/pages/jsrdzda/jx/jsrCjCheck.jsp</result>
+			<result name="buCheckCj">/pages/jsrdzda/jx/jsrCjBuCheck.jsp</result>
+			<result name="showJsr">/pages/jsrdzda/jx/showjsrCjInfo.jsp</result>
+			
+			<!-- 车管功能 -->
+			<result name="cgJsrList">/pages/jsrdzda/cg/cgchecklist.jsp</result>
+			<result name="cgCheck">/pages/jsrdzda/cg/cgCheck.jsp</result>
+			<result name="printYzbm">/pages/jsrdzda/cg/ywmPrint.jsp</result>
+			
+			<!--驾驶证档案卷宗查询  -->
+			<result name="findInfo">/pages/jsrdzda/dzdaInfo/dzdaDetail.jsp</result>
+		</action>
+	</package>
+</struts>

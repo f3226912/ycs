@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_wpz" location="0,0" size="0,0">
+    <action name="wpz_*" location="0,0" size="0,0">
+      <result name="initJdc_wpz">
+        <resourceEdge source="initJdc_wpz" routing="0" target="wpz_jdcsledit.jsp" />
+      </result>
+      <result name="spcxlist">
+        <resourceEdge source="spcxlist" routing="0" target="spcxlist.jsp" />
+      </result>
+      <result name="slxq">
+        <resourceEdge source="slxq" routing="0" target="wpz_jdcslshow.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="wpz_ajax" location="0,0" size="0,0">
+    <action name="wpzajax_*" location="0,0" size="0,0">
+      <result name="jsonBean" />
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="jdcsledit.jsp" path="/pages/veh/jdcsledit.jsp" location="30,1206" size="150,55" />
+  <webResource name="spcxlist.jsp" path="/pages/veh/spcxlist.jsp" location="768,541" size="150,55" />
+  <webResource name="jdcsl_zchf.jsp" path="/pages/veh/jdcsl_zchf.jsp" location="762,366" size="150,55" />
+  <webResource name="jdccjlist.jsp" path="/pages/veh/jdccjlist.jsp" location="765,191" size="150,55" />
+  <webResource name="splist.jsp" path="/pages/veh/splist.jsp" location="774,856" size="150,55" />
+  <webResource name="spedit.jsp" path="/pages/veh/spedit.jsp" location="494,1066" size="150,55" />
+  <webResource name="posplist.jsp" path="/pages/veh/posplist.jsp" location="208,856" size="150,55" />
+  <webResource name="pospedit.jsp" path="/pages/veh/pospedit.jsp" location="208,681" size="150,55" />
+  <webResource name="wpz_jdcsledit.jsp" path="/pages/jdcsl_wzp/wpz_jdcsledit.jsp" location="0,0" size="0,0" />
+  <webResource name="spcxlist.jsp" path="/pages/jdcsl_wzp/spcxlist.jsp" location="0,0" size="0,0" />
+  <webResource name="wpz_jdcslshow.jsp" path="/pages/jdcsl_wzp/wpz_jdcslshow.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

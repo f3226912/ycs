@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_dydj" extends="/ycszh" namespace="/dydj">
+	   <action name="dydj_*" class="com.ycszh.ssh.action.dydj.DydjManageAction" method="{1}">
+			<result name="userList">/pages/dydj/user/userList.jsp</result>
+			<result name="yhUserList">/pages/dydj/user/yhUserList.jsp</result>
+			<result name="initAdd">/pages/dydj/user/addUser.jsp</result>
+			<result name="initYhAdd">/pages/dydj/user/addYHUser.jsp</result>
+			<result name="dydjYhdbrList">/pages/dydj/dydjYhdbrList.jsp</result>
+			<result name="editYhdbr">/pages/dydj/addYhdbr.jsp</result>
+		</action>
+		<action name="yhsl_*" class="com.ycszh.ssh.action.dydj.DydjServiceAction" method="{1}">
+			<result name="success">/pages/dydj/user/userList.jsp</result>
+			<result name="dydjlist">/pages/dydj/dydjVehList.jsp</result>
+			<result name="yhdetail">/pages/dydj/sbDetail.jsp</result>
+			<result name="zzdetail">/pages/dydj/personDetail.jsp</result>
+			<result name="grdetail">/pages/dydj/yjGedyGe.jsp</result>
+			<result name="warnDydj">/pages/dydj/warnDydj.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ycszh_ydwt" location="61,50" size="181,155">
+    <action name="ydwt_*" location="21,20" size="150,125">
+      <result name="busList">
+        <resourceEdge source="busList" routing="0" target="businessList.jsp" />
+      </result>
+      <result name="quitStat">
+        <resourceEdge source="quitStat" routing="0" target="declareAndQuit.jsp" />
+      </result>
+      <result name="postQuit">
+        <resourceEdge source="postQuit" routing="0" target="posQuit.jsp" />
+      </result>
+      <result name="userList">
+        <resourceEdge source="userList" routing="0" target="userList.jsp" />
+      </result>
+      <result name="initAdd">
+        <resourceEdge source="initAdd" routing="0" target="addUser.jsp" />
+      </result>
+      <result name="busDetail">
+        <resourceEdge source="busDetail" routing="0" target="businessDetail.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="businessList.jsp" path="/pages/ydwt/businessManage/businessList.jsp" location="458,42" size="150,55" />
+  <webResource name="declareAndQuit.jsp" path="/pages/ydwt/statistics/declareAndQuit.jsp" location="611,123" size="150,55" />
+  <webResource name="posQuit.jsp" path="/pages/ydwt/statistics/posQuit.jsp" location="225,508" size="150,55" />
+  <webResource name="addUser.jsp" path="/pages/ydwt/user/addUser.jsp" location="481,309" size="150,55" />
+  <webResource name="userList.jsp" path="/pages/ydwt/user/userList.jsp" location="20,501" size="150,55" />
+  <webResource name="businessDetail.jsp" path="/pages/ydwt/businessManage/businessDetail.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

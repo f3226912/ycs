@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="jdcjsrxpk" extends="/ycszh" namespace="/jdcjsrxpk">
+		<action name="jdcjsrxpk_*" class="com.ycszh.ssh.action.jdcjsrxpk.JdcjsrxpkAction" method="{1}">
+			<!-- 根据号牌号码、号牌种类和车辆识别代号查询图片码信息 -->
+			<result name="jdcxpkList">/pages/jdcjsrxpk/jdcxpk.jsp</result>
+			<result name="jsrxpkList">/pages/jdcjsrxpk/jsrxpk.jsp</result>
+	    </action>
+	</package>
+</struts>

@@ -1,0 +1,55 @@
+#ejiaA1 {
+	width: 90%;
+}
+#ejiaA1 td, #ejiaA1 th {
+	padding: 5px;
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+}
+#ejiaA1 tr td span {
+	color: #686868;
+}
+#ejiaA1 tr td span.st1 {
+	color: #ff0000
+}
+table {
+	margin-bottom: 3px;
+}
+table, table td, table th {
+	border: 1px solid #aaccee;
+	border-collapse: collapse;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.table_t {
+	background: url(../images/table_abg.gif) repeat-x;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+td {
+	height: 23px;
+	text-align: center;
+	font-size: 12px;
+}
+.td_r {
+	text-align: right;
+}
+.td_l {
+	text-align: left;
+}
+.bnt_a {
+	width: 90px;
+	height: 23px;
+	border: none;
+	background: url(../images/bnt_1.jpg) no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: pointer;
+}
+.div_bnt {
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

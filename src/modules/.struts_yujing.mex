@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="/yujing" location="0,0" size="0,0">
+    <action name="yujing_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="yujinglist.jsp" />
+      </result>
+    </action>
+    <action name="slgSpxx_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="splist.jsp" />
+      </result>
+      <result name="edit">
+        <resourceEdge source="edit" routing="0" target="spedit.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="/delSlgSpxx" location="0,0" size="0,0">
+    <action name="slgSpxx_*" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="isSp" />
+    </action>
+  </package>
+  <webResource name="yujinglist.jsp" path="/pages/yujing/yujinglist.jsp" location="0,0" size="0,0" />
+  <webResource name="splist.jsp" path="/pages/drv/splist.jsp" location="0,0" size="0,0" />
+  <webResource name="spedit.jsp" path="/pages/drv/spedit.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="/gjgggl" extends="/ycszh" namespace="/gjgg">
+		<action name="gjgg_*" class="gjbaxxspAction" method="{1}">
+			<result name="clbagl">/pages/gjgggl/xxbaspgl/clbagl.jsp</result>
+			<result name="clbagl_detail">/pages/gjgggl/xxbaspgl/clbagl_detail.jsp</result>
+			<result name="ggjgbagl">/pages/gjgggl/xxbaspgl/ggjgbagl.jsp</result>
+			<result name="dbrybagl">/pages/gjgggl/xxbaspgl/dbrybagl.jsp</result>
+		</action>
+		<action name="ycgg_*" class="gjclycxxglAction" method="{1}">
+			<result name="gjclycxx">/pages/gjgggl/ycxxgl/gjclycxxgl.jsp</result>
+			<result name="gjclycxxByPch">/pages/gjgggl/ycxxgl/gjclycxxglByPch_Sh_detail.jsp</result>
+			<result name="gjclycxxByPch_dy">/pages/gjgggl/ycxxgl/gjclycxxglByPch_Sh_detail_dy.jsp</result>
+			<result name="gjclycxx_fp">/pages/gjgggl/ycxxgl/gjclycxxgl_fp.jsp</result>
+			<result name="gjclycxx_fp_pch">/pages/gjgggl/ycxxgl/gjclycxxglByPch_fp.jsp</result>
+			<result name="updateBusGgjgclsbByPch">/pages/gjgggl/ycxxgl/gjclycxxglByPch_sh.jsp</result>
+			<result name="updateBusGgjgclsbByPch_fp_pch">/pages/gjgggl/ycxxgl/gjclycxxglByPch_fp_pch.jsp</result>
+			<result name="updateBusGgjgclsbByLsh">/pages/gjgggl/ycxxgl/gjclycxxglByLsh_sh.jsp</result>
+			<result name="initalTbyy">/pages/gjgggl/ycxxgl/gjclycxxgl_tbyy.jsp</result>
+			<result name="gjclycxxgl_detail">/pages/gjgggl/ycxxgl/gjclycxxgl_detail.jsp</result>
+			<result name="gjclycxxgl_detail_show">/pages/gjgggl/ycxxgl/gjclycxxgl_detail_show.jsp</result>
+		</action>
+		<action name="ggz_*" class="ggzxxglAction" method="{1}">
+			<result name="ggzdy">/pages/gjgggl/ggzxxgl/ggzdy.jsp</result>
+			<result name="ggzdy_cd">/pages/gjgggl/ggzxxgl/ggzczcd.jsp</result>
+			<result name="zxorhf">/pages/gjgggl/ggzxxgl/ggzzxhf.jsp</result>
+			<result name="ggzbylsh">/pages/gjgggl/ggzxxgl/ggzzxhf_detail.jsp</result>
+		</action>
+		<action name="xtgl_*" class="xtglAction" method="{1}">
+			<result name="gjgszhgl">/pages/gjgggl/xtgl/gjgszhgl.jsp</result>
+			<result name="szzdgl">/pages/gjgggl/xtgl/zdgl.jsp</result>
+		</action>
+		<action name="tjcx_*" class="tjcxAction" method="{1}">
+			<result name="lscx">/pages/gjgggl/tjcx/lscx.jsp</result>
+			<result name="lscx_detail">/pages/gjgggl/tjcx/lscx_detail.jsp</result>
+			<result name="showDetail">/pages/gjgggl/tjcx/lscx_showDetail.jsp</result>
+			<result name="ggzdacx">/pages/gjgggl/tjcx/ggzdacx.jsp</result>
+			<result name="shqktj">/pages/gjgggl/tjcx/shqktj.jsp</result>
+			<result name="shqktj_detail">/pages/gjgggl/tjcx/shqktj_detail.jsp</result>
+			<result name="zjffqktj">/pages/gjgggl/tjcx/zjffqktj.jsp</result>
+			<result name="zjffqktj_detail">/pages/gjgggl/tjcx/zjffqktj_detail.jsp</result>
+		</action>
+	</package>
+</struts>

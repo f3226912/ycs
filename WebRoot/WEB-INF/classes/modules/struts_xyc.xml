@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ycszh_xyc" extends="/ycszh" namespace="/xyc">
+		<action name="xyccode_*" class="com.ycszh.ssh.action.xyc.YcsXycCodeAction" method="{1}">
+			<result name="list">/pages/xyc/listcode.jsp</result>
+			<result name="insert">/pages/xyc/editcode.jsp</result>
+			<result name="update">/pages/xyc/editcode.jsp</result>
+		</action>
+		<action name="xycveh_*" class="com.ycszh.ssh.action.xyc.YcsXycVehAction" method="{1}">
+			<result name="list">/pages/xyc/listveh.jsp</result>
+			<result name="insert">/pages/xyc/editveh.jsp</result>
+			<result name="update">/pages/xyc/editveh.jsp</result>
+			<result name="view">/pages/xyc/editveh.jsp</result>
+		</action>
+	</package>
+</struts>

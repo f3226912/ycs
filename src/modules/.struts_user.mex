@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="example_user" location="0,0" size="0,0">
+    <action name="user_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="list.jsp" />
+      </result>
+      <result name="insert">
+        <resourceEdge source="insert" routing="0" target="edit.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="edit.jsp" />
+      </result>
+      <result name="view">
+        <resourceEdge source="view" routing="0" target="edit.jsp" />
+      </result>
+      <result name="jqlist">
+        <resourceEdge source="jqlist" routing="0" target="jq_list.jsp" />
+      </result>
+      <result name="uppwd">
+        <resourceEdge source="uppwd" routing="0" target="main.jsp" />
+      </result>
+      <result name="upwd">
+        <resourceEdge source="upwd" routing="0" target="updatepwd.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/user/list.jsp" location="0,0" size="0,0" />
+  <webResource name="edit.jsp" path="/pages/user/edit.jsp" location="0,0" size="0,0" />
+  <webResource name="jq_list.jsp" path="/pages/user/jq_list.jsp" location="0,0" size="0,0" />
+  <webResource name="login.jsp" path="login.jsp" location="0,0" size="0,0" />
+  <webResource name="main.jsp" path="/pages/inc/main.jsp" location="0,0" size="0,0" />
+  <webResource name="updatepwd.jsp" path="/pages/user/updatepwd.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

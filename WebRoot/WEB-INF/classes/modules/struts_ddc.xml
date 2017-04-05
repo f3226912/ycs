@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd"><struts>
+	<package name="ycszh_ddc" extends="/ycszh" namespace="/ddc">
+		<action name="ddc_*" class="com.ycszh.ssh.action.ddc.VehtypeElectroAction" method="{1}">
+			<result name="electroList">/pages/ddc/vehTypeElectroList.jsp</result>
+			<result name="updateElectro">/pages/ddc/editVehtypeElectro.jsp</result>
+		</action>
+		
+	</package>
+	
+</struts>
